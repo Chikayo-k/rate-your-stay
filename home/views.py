@@ -5,4 +5,5 @@ from .models import Article
 
 class ArticleList(generic.ListView):
     queryset =  Article.objects.all()
-    template_name = 'article_list.html'
+    template_name = 'home/index.html'
+    paginate_by = 4

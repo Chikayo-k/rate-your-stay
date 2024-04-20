@@ -14,6 +14,10 @@ class Article(models.Model):
     content = models.TextField()
     status = models.IntegerField(choices=STATUS, default=0)
 
+    def __str__(self):
+        return f'Article Name: {self.title}'
+
+
 class Reviews(models.Model):
     article_id=models.ForeignKey
     article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='chosen_articl')
@@ -22,4 +26,9 @@ class Reviews(models.Model):
     rate = models.IntegerField(choices=RATE, default=0)
     comment_area = models.TextField()
     comment_date = models.DateTimeField(auto_now_add= True)
+
+    class Meta:
+        ordering = ['-comment_date']
     
+    def __str__(self):
+        return f'Comment for : {self.article}'

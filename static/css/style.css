@@ -1,1 +1,5 @@
-
+#hero-img{
+    background: url(../images/rate-your-stay.jpg) no-repeat center left/cover;
+    width: 100%;
+    height: 70vh;
+}

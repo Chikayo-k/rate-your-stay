@@ -50,14 +50,6 @@ footer{
     align-items: center;
 }
 
-footer li {
-    list-style: none;
- }
-
-footer ul{
-    margin: 0;
-}
-
 .social-media{ 
     width: 30%;
 }

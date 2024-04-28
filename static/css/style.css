@@ -61,6 +61,10 @@ footer{
     padding-right: 3%;
 }
 
+.helpcenter {
+    list-style-type: none;
+}
+
 /*------------------- Media query-------------------*/
 
 /* Over768px */

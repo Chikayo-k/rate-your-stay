@@ -3,6 +3,7 @@
 {% block content %}
 {% load static%}
 
+<main>
 <section id="hero-img">
   <div class="lead-message-container">
     <div class="lead-message-inner-container">
@@ -16,13 +17,13 @@
   </div>
 </section>
 
-  
+<section id="articles">
+  {%for article in article_list %}
+    <h2>{{article.title}}</h2>
+    <p>{{article.category}}</p>
+    <p>{{article.content}}</p>
+  {% endfor%}
+</section>
 
-
-{%for article in article_list %}
-<h2>{{article.title}}</h2>
-<p>{{article.category}}</p>
-<p>{{article.content}}</p>
-{% endfor%}
-
+</main>
 {% endblock %}

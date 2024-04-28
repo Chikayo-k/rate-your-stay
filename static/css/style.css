@@ -41,6 +41,12 @@ body{
     border: #FF5722;
 }
 
+
+/* Article section */
+#articles{
+    margin: 5%;
+}
+
 /* Footer */
 
 footer{

@@ -70,7 +70,10 @@ footer{
     list-style-type: none;
 }
 
-
+.btn-regester{
+    background-color: #FF5722;
+    border: #FF5722;
+}
 /*------------------- Media query-------------------*/
 
 /* Over768px */

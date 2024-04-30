@@ -3,14 +3,15 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
-CATEGORY_CHOICES=(0,'Beach'),(1,'History'),(3,'City')
+CATEGORY_CHOICES=(0,'Beach'),(1,'History'),(2,'City')
 STATUS=(0,'Draft'),(0,'Published')
 RATE=(0,0),(1,1),(2,2),(3,3),(4,4),(5,5)
 
 class Article(models.Model):
-    title = models.CharField(max_length=20, unique=True)
+    title = models.CharField(max_length=30, unique=True)
     slug = models.SlugField(max_length=30, unique=True)
     category = models.IntegerField(choices=CATEGORY_CHOICES, default=0)
+    description = models.TextField(null =True)
     content = models.TextField()
     status = models.IntegerField(choices=STATUS, default=0)
 

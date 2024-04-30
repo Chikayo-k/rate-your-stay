@@ -18,11 +18,21 @@
 </section>
 
 <section id="articles">
-  {%for article in article_list %}
-    <h2>{{article.title}}</h2>
-    <p>{{article.category}}</p>
-    <p>{{article.content}}</p>
-  {% endfor%}
+  <div class="col-12 mt-3 justify-content-center justify-content-lg-start">
+    <div class="row justify-content-center justify-content-lg-start">
+      {%for article in article_list %}
+        <div class="card md-4 m-4" style="width: 18rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body container text-center">
+            <h5 class="card-title">{{article.title}}</h5>
+            <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+        <br>
+      {% endfor%}
+    </div>
+</div>
 </section>
 
 </main>

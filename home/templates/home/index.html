@@ -24,6 +24,13 @@
         <div class="card md-4 m-4" style="width: 18rem;">
           <img class="card-img-top" src="..." alt="Card image cap">
           <div class="card-body container text-center">
+            {% if article.category == 0%}
+              <p class="category-tag beach">Beach</p>
+            {% elif article.category == 1 %}
+              <p class="category-tag history">History</p>
+            {% else %}
+              <p class="category-tag city">City</p>
+            {% endif %}
             <h5 class="card-title">{{article.title}}</h5>
             <p class="card-text text-start">{{article.description}}</p>
             <a href="#" class="btn btn-explore btn-primary">Explore</a>

@@ -46,6 +46,34 @@ body{
     margin: 5%;
 }
 
+.btn-explore{
+    background-color:#2D4059;
+    border: #2D4059;
+}
+
+.btn-explore:hover{
+    background-color:#2D4059;
+    border: #2D4059;
+    opacity: 0.7;
+}
+/* Category tags */
+
+.category-tag{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.beach{
+    background-color: rgb(167, 212, 252);
+}
+
+.history{
+    background-color:rgb(191, 212, 191);
+}
+
+.city{
+    background-color: rgb(254, 212, 169);
+}
 /* Footer */
 
 footer{

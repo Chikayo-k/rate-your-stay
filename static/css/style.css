@@ -46,6 +46,10 @@ body{
     margin: 5%;
 }
 
+.card{
+   padding:0 !important ;
+}
+
 .btn-explore{
     background-color:#2D4059;
     border: #2D4059;

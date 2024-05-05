@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -13,6 +14,7 @@ class Article(models.Model):
     category = models.IntegerField(choices=CATEGORY_CHOICES, default=0)
     description = models.TextField(null =True)
     content = models.TextField()
+    article_image = CloudinaryField('image', default='placeholder')
     status = models.IntegerField(choices=STATUS, default=0)
 
     def __str__(self):

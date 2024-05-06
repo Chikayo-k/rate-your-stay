@@ -78,6 +78,17 @@ body{
 .city{
     background-color: rgb(254, 212, 169);
 }
+
+/* Page navigation */
+.next{
+    background-color: #222831 ;
+    color: white;
+    margin-top: 70%;
+}
+
+.next:hover{
+    color: black;
+}
 /* Footer */
 
 footer{

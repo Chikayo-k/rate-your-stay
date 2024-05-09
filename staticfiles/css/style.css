@@ -78,6 +78,13 @@ body{
 .city{
     background-color: rgb(254, 212, 169);
 }
+
+/* Help Center */
+.help-center{
+    background-color: #222831;
+    color: white;
+}
+
 /* Footer */
 
 footer{

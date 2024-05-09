@@ -16,6 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
@@ -23,6 +24,8 @@
      <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
      <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
      <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+
+     <script src="{% static 'js/script.js' %}"></script>
 
   </head>
   <body>
@@ -60,6 +63,27 @@
       <!-- Content Goes here -->
       {% endblock content %}
 
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Help Center</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>If you have any issue please don't hesitate to contact us</p>
+        <p>Email: rate-your-self@supportdesk.com</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <footer>
       <div class="social-media">       
           <a href="https://www.facebook.com/" aria-label="Visit our Facebook page (opens in a new tub)" target="_blank"><i class="fa-brands fa-facebook-f fa-xl" style="color: #ffffff;"></i></a>
@@ -67,7 +91,10 @@
           <a href="https://www.youtube.com/" aria-label="Visit our YouTube page (opens in a new tub)" target="_blank"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a>
       </div>
       <li class="nav-item helpcenter">
-        <a class="nav-link text-light" href="#">Help Center</a>
+        <!-- Button trigger modal -->
+        <button class="help-center" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Help Center
+        </button>
       </li>
     </footer>
     

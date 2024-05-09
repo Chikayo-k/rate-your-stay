@@ -37,7 +37,7 @@
             {% endif %}
             <h5 class="card-title">{{article.title}}</h5>
             <p class="card-text text-start">{{article.description}}</p>
-            <a href="#" class="btn btn-explore btn-primary">Explore</a>
+            <a href="{% url 'detail' article.slug %}" class="btn btn-explore btn-primary">Explore</a>
           </div>
         </div>
         <br>

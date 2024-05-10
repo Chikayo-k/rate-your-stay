@@ -20,10 +20,9 @@ class Article(models.Model):
     def __str__(self):
         return f'Article Name: {self.title}'
 
-
 class Reviews(models.Model):
     article_id=models.ForeignKey
-    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='chosen_articl')
+    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='chosen_article')
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='commenter')
     review_title = models.CharField(max_length=20)
     rate = models.IntegerField(choices=RATE, default=0)

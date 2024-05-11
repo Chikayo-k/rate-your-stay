@@ -123,6 +123,16 @@ footer{
 
 /* Log In Page */
 
+.background{
+    background:url(../images/login.jpg) no-repeat center center/cover;
+    width:100% ;
+}
+
+.login-background{
+    background-color: rgb(238, 238, 238, 0.7);
+    padding: 5%;
+ }
+
 .login-container{
     height: 100vh;
     display: flex;

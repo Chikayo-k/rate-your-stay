@@ -8,7 +8,6 @@ class ArticleList(generic.ListView):
     template_name = 'home/index.html'
     paginate_by = 4
 
-
 def detail(request, slug):
 
     queryset = Article.objects.all()

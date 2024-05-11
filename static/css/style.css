@@ -120,6 +120,26 @@ footer{
     border: #FF5722;
 }
 
+
+/* Log In Page */
+
+.login-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-title{
+    margin-bottom: 10%;
+}
+
+.btn-signup{
+    background-color:  #FF5722;
+    border: #FF5722;
+    color: white;
+    margin-top: 10%;
+}
 /*------------------- Media query-------------------*/
 
 /* Over768px */

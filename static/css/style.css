@@ -153,6 +153,27 @@ footer{
 
 /* logout page */
 
+.logout-background-img{
+    background:url(../images/logout.jpg) no-repeat center center/cover;
+    width: 100%;
+}
+.logout-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logout-background{
+    background-color: rgb(238, 238, 238, 0.7);
+    padding: 5%;
+}
+
+.logout-title{
+    margin-bottom: 15%;
+}
+
 /*------------------- Media query-------------------*/
 
 /* Over768px */

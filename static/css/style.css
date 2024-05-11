@@ -190,6 +190,36 @@ footer{
     margin-bottom: 15%;
 }
 
+/* Signup page */
+
+.signup-background-img{
+    background:url(../images/register.jpg) no-repeat center center/cover;
+}
+
+.signup-background{
+    background-color: rgb(238, 238, 238, 0.7);
+    padding: 5%;
+}
+
+.signup-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-title{
+    margin-bottom: 5%;
+}
+
+.signup-btn{
+    background-color: #FF5722;
+    border: #FF5722;
+    color: white;
+    padding: 2%;
+    margin-top: 5%;
+}
+
 /*------------------- Media query-------------------*/
 
 /* Over768px */

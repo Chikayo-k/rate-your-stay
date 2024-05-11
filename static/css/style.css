@@ -31,13 +31,29 @@ body{
     align-items: center;
 }
 
-.lead-btns{
-    padding-top: 10%;
-}
-
 .lead-register-btn{
     background-color:#FF5722;
-    border: #FF5722;
+    color: white;
+}
+
+.lead-register-btn:hover{
+    opacity: 0.7;
+    color: white;
+}
+
+.lead-logout-btn,.lead-login-btn{
+    background-color: #2D4059;
+    color: white;
+}
+
+.lead-logout-btn:hover{
+    opacity: 0.7;
+    color: white;
+}
+
+.lead-login-btn:hover{
+    opacity: 0.7;
+    color: white;
 }
 
 

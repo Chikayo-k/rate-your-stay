@@ -10,8 +10,13 @@
       <h2 class="lead-message">Travel Reviews</h2>
       <p class="lead-message">Share Your Holiday Experience</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center lead-btns">
-         <button type="button" class="btn btn-register btn-primary btn-lg px-4 gap-3 register-btn  lead-register-btn">Register</button>
-         <button type="button" class="btn btn-outline-secondary btn-lg px-4 login-btn">Log In</button>
+         {% if user.is_authenticated %}
+         <a class="lead-logout-btn nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+         {% else %}
+         <a class="lead-register-btn nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+         href="{% url 'account_signup' %}">Register</a>
+         <a class="lead-login-btn nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
+         {% endif %}
       </div>
     </div>
   </div>

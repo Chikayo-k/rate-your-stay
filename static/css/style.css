@@ -220,6 +220,31 @@ footer{
     margin-top: 5%;
 }
 
+
+/* Detail Page */
+
+.detail-section{
+    margin-top: 5%;
+}
+
+.detail-top{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.article-title{
+    margin-top: 5%;
+    text-align: left;
+}
+
+.article-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
 /*------------------- Media query-------------------*/
 
 /* Over768px */
@@ -240,4 +265,10 @@ footer{
         margin-left:10%;
     }
  
+
+    /* Detail Page */
+    .article-title{
+        margin-top: 0;
+        margin-bottom: 5%;
+    }
 }

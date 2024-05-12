@@ -245,6 +245,28 @@ footer{
     text-align: left;
 }
 
+.review-title{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.write-review-btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.write-review{
+    background-color: #FF5722;
+    border: #FF5722;
+    color: white;
+    font-weight: bold;
+    margin: 3% 0;
+
+
+    text-decoration:none ;
+    
+}
 /*------------------- Media query-------------------*/
 
 /* Over768px */

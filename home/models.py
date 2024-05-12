@@ -15,6 +15,7 @@ class Article(models.Model):
     description = models.TextField(null =True)
     content = models.TextField()
     article_image = CloudinaryField('image', default='placeholder')
+    detail_image = CloudinaryField('image', default='placeholder')
     status = models.IntegerField(choices=STATUS, default=0)
 
     def __str__(self):

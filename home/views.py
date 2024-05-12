@@ -16,5 +16,5 @@ def detail(request, slug):
     return render(
         request,
         'home/detail.html',
-        {'detail':detail},
+        {'article':detail},
     )

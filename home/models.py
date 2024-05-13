@@ -17,6 +17,7 @@ class Article(models.Model):
     article_image = CloudinaryField('image', default='placeholder')
     detail_image = CloudinaryField('image', default='placeholder')
     status = models.IntegerField(choices=STATUS, default=0)
+    
 
     def __str__(self):
         return f'Article Name: {self.title}'

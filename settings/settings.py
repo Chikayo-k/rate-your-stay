@@ -150,3 +150,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CLOUDINARY_STORAGE = {
+'CLOUD_NAME': 'drfwsxqn6',
+'API_KEY': '423253744367575',
+'API_SECRET': '6puBV10lTaAb5uyJ3Q4AIIChszQ',
+ 'SECURE': True,
+}

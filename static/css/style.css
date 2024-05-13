@@ -245,6 +245,8 @@ footer{
     text-align: left;
 }
 
+/* Review Section */
+
 .review-title{
     text-align: center;
     margin-top: 5%;
@@ -262,17 +264,30 @@ footer{
     color: white;
     font-weight: bold;
     margin: 3% 0;
-
-
     text-decoration:none ;
-    
+}
+
+.review-container {
+    margin-bottom: 5%;
 }
 /*------------------- Media query-------------------*/
+
+@media screen and (min-width:576px){
+
+    .review-img-container{
+        padding:0;
+    }
+    
+    .review-container{
+        border-style:groove;
+}
+}
 
 /* Over768px */
 @media screen and (min-width:768px){
 
 }
+
 
 /* //Over 992 px// */
 @media screen and (min-width: 992px) {

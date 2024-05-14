@@ -22,12 +22,18 @@
 
     <section class="review-section">
       <h2 class="review-title">Explore Reviews</h2>
+
+      <!-- Write Review button -->
+      {% if user.is_authenticated %}
       <div class="write-review-btn">
         <a class="nav-link write-review" href="">Write Review</a>
       </div>
+      {% else %}
+      <p class="message-review">If you wish to share your holiday experience, please log In first.</p>
+      {% endif %}
 
-      {% for review in reviews %}
-      
+      <!-- Review -->
+      {% for review in reviews %}      
       <div class="container review-container">
         <div class="row">
           <div class="col-12 col-sm-4 col-lg-3 review-img-container">
@@ -39,9 +45,7 @@
             <p>{{review.comment_date}}</p>        
           </div>                 
         </div>
-      </div>
-   
-
+      </div> 
       {% endfor %}
      
     </section>

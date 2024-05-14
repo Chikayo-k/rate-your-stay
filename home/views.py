@@ -24,3 +24,11 @@ def detail(request, slug):
          'reviews':reviews,
         },
     )
+
+
+class Reviews(generic.ListView):
+    queryset =  Reviews.objects.all()
+    template_name = 'home/add_reviews.html'
+
+   
+

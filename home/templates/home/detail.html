@@ -26,7 +26,7 @@
       <!-- Write Review button -->
       {% if user.is_authenticated %}
       <div class="write-review-btn">
-        <a class="nav-link write-review" href="">Write Review</a>
+        <a class="nav-link write-review" href="{% url 'reviews' %}">Write Review</a>
       </div>
       {% else %}
       <p class="message-review">If you wish to share your holiday experience, please log In first.</p>

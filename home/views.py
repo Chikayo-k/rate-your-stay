@@ -27,8 +27,17 @@ def detail(request, slug):
 
 
 class Reviews(generic.ListView):
-    queryset =  Reviews.objects.all()
+    
+    queryset = Reviews.objects.all()
     template_name = 'home/add_reviews.html'
+
+    def get_context_data(self, *args, **kwargs):
+        article = super().get_context_data(*args, **kwargs)
+        article['article_lists'] = Article.objects.all()
+        return article
+
+ 
+    
 
    
 

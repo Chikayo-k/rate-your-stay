@@ -284,6 +284,28 @@ footer{
 .review-container {
     margin-bottom: 5%;
 }
+
+/* Review Form */
+.review-title{
+    text-align: center;
+}
+
+.review-leadmessage{
+    text-align: center;
+    margin: 5% 0;
+}
+
+.review-form{
+ width: 60%;
+ margin-left: 20%;
+ margin-bottom: 5%;
+}
+
+.stars{
+    margin-top: 3%;
+    
+}
+
 /*------------------- Media query-------------------*/
 
 @media screen and (min-width:576px){

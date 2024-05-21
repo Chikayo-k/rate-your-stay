@@ -13,15 +13,16 @@ def detail(request, slug):
     
     queryset = Article.objects.all()
     detail = get_object_or_404(queryset, slug=slug)
-    reviews = detail.chosen_article.all()
+    reviews = detail.chosen_article.all().order_by("-comment_date")
+    reviews_count = detail.chosen_article.count()
     
-
     return render(
         request,
         'home/detail.html',
         {
          'article':detail,
          'reviews':reviews,
+         'reviews_count':reviews_count,
         },
     )
 

@@ -39,6 +39,9 @@
 
       <!-- Review -->
       {% if reviews %} 
+      <div class="comment-count">
+        <i class="fa-regular fa-message"> {{reviews_count}} </i>
+      </div>
       {% for review in reviews %} 
         <div class="container review-container">
         <div class="row">

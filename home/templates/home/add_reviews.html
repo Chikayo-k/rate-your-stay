@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
- <h2 class="review-title">Review Form</h2>
 
+<section class="container-fluid vh-100 review-section">
+ <h2 class="review-title">Review Form</h2>
  <p class="review-leadmessage">Let's share your holiday experience !! To share your experience, please fill out this form down below.</p>
 
-
 <!-- Form -->
+
 <div class="review-form">
  <div class="mb-3">
     <select class="form-select" aria-label="Default select example">
@@ -15,7 +16,6 @@
         <option>{{article.title}}</option>
         {% endfor %}
       </select>
-
       <select class="form-select stars" aria-label="Default select example">
         <option selected>Rate this holiday</option>
         <option  value="1">★</option>
@@ -33,9 +33,9 @@
     <label for="exampleFormControlTextarea1" class="form-label">Write Your Review</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
-
   <button type="submit" class="btn btn-primary">Submit</button>
 </div>
+</section>
 
 
 {% endblock content %}

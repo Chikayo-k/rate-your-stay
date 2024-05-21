@@ -285,7 +285,13 @@ footer{
     margin-bottom: 5%;
 }
 
+.no-review{
+    text-align: center;
+}
+
 /* Review Form */
+
+
 .review-title{
     text-align: center;
 }

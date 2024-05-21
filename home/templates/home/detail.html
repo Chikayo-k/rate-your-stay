@@ -33,8 +33,9 @@
       {% endif %}
 
       <!-- Review -->
-      {% for review in reviews %}      
-      <div class="container review-container">
+      {% if reviews %} 
+      {% for review in reviews %} 
+        <div class="container review-container">
         <div class="row">
           <div class="col-12 col-sm-4 col-lg-3 review-img-container">
             <img class="img-fluid review-img" src="{{article.detail_image.url}}" alt="">  
@@ -47,8 +48,46 @@
         </div>
       </div> 
       {% endfor %}
+      {% else %}
+      <p class="no-review">No reviews have been posted yet</p>
+      {% endif %}
      
     </section>
+
+
+
+
+    {% if user.is_authenticated %}
+    <section id="add-review-section" class="container-fluid vh-100 x">
+      <h2 class="review-title">Review Form</h2>
+      <p class="review-leadmessage">Let's share your holiday experience !! To share your experience, please fill out this form down below.</p>
+     
+     <!-- Form -->
+     <div class="review-form">
+      <div class="mb-3">   
+          <p>Write a review for : {{article.title}}</p>
+           <select class="form-select stars" aria-label="Default select example">
+             <option selected>Rate this holiday</option>
+             <option  value="1">★</option>
+             <option  value="2">★★</option>
+             <option  value="3">★★★</option>
+             <option  value="4">★★★★</option>
+             <option  value="5">★★★★★</option>
+           </select>
+       </div>
+       <div class="mb-3">
+         <label class="form-label" for="review-title">Title</label>
+         <input class="form-control" type="text">
+       </div>
+       <div class="mb-3">
+         <label for="exampleFormControlTextarea1" class="form-label">Write Your Review</label>
+         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+       </div>
+     
+       <button type="submit" class="btn btn-primary">Submit</button>
+     </div>     
+     </section>
+     {% endif %}
 
 
 </main>

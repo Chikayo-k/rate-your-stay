@@ -312,6 +312,14 @@ footer{
     
 }
 
+.review-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    margin: 2% 0;
+}
+
 /*------------------- Media query-------------------*/
 
 @media screen and (min-width:576px){

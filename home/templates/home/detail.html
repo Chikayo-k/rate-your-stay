@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 <main>
      
@@ -71,30 +72,33 @@
       <p class="review-leadmessage">Let's share your holiday experience !! To share your experience, please fill out this form down below.</p>
      
      <!-- Form -->
-     <div class="review-form">
-      <div class="mb-3">   
-          <p>Write a review for : {{article.title}}</p>
-           <select class="form-select stars" aria-label="Default select example">
-             <option selected>Rate this holiday</option>
-             <option  value="1">★</option>
-             <option  value="2">★★</option>
-             <option  value="3">★★★</option>
-             <option  value="4">★★★★</option>
-             <option  value="5">★★★★★</option>
-           </select>
-       </div>
-       <div class="mb-3">
-         <label class="form-label" for="review-title">Title</label>
-         <input class="form-control" type="text">
-       </div>
-       <div class="mb-3">
-         <label for="exampleFormControlTextarea1" class="form-label">Write Your Review</label>
-         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-       </div>
+      <div class="review-form">
+         <form id="commentForm" method="post">
+          <p>Review as : {{ user.username }}</p>
+          <div class="mb-3">   
+              <p>Write a review for : {{article.title}}</p>
+              <select class="form-select stars" aria-label="Default select example">
+                <option selected>Rate this holiday</option>
+                <option  value="1">★</option>
+                <option  value="2">★★</option>
+                <option  value="3">★★★</option>
+                <option  value="4">★★★★</option>
+                <option  value="5">★★★★★</option>
+              </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="review-title">Title</label>
+            <input class="form-control" type="text">
+          </div>
+          <div class="mb-3">
+              {{ review_form | crispy }}
+              {% csrf_token %}
+              <button type="submit" class="btn btn-primary">Submit</button>
+         </form>
+        </div> 
+      </div>     
+    </section>
      
-       <button type="submit" class="btn btn-primary">Submit</button>
-     </div>     
-     </section>
      {% endif %}
 
 

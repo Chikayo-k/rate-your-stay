@@ -16,6 +16,13 @@ def detail(request, slug):
     detail = get_object_or_404(queryset, slug=slug)
     reviews = detail.chosen_article.all().order_by("-comment_date")
     reviews_count = detail.chosen_article.count()
+
+    if request.method == "POST":    
+        review_form = ReviewForm(data=request.POST)
+        reviews = review_form.save(commit=False)
+        reviews.author = request.user
+        reviews.save()
+
     review_form = ReviewForm()
     
     return render(

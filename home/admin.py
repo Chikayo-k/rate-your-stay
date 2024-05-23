@@ -5,3 +5,4 @@ from .models import Article,Reviews
 admin.site.register(Article)
 admin.site.register(Reviews)
 
+

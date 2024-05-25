@@ -2,8 +2,13 @@
 {% block content %}
 {% load static %}
 
-<h1>hello this is an about page</h1>
-<h2>{{ about.title }}</h2>
-<p>{{ about.content }}</p>
+<!-- About Us Top Image -->
+<div class="aboutus-img">
+</div>
 
+<section class="aboutus-content">
+<h1 class="aboutus-title">About Us</h1>
+<h2 class="about-title">{{ about.title }}</h2>
+<p>{{ about.content }}</p>
+</section>
 {% endblock content %}

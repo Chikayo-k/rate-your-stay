@@ -19,9 +19,10 @@ def detail(request, slug):
 
     if request.method == "POST":    
         review_form = ReviewForm(data=request.POST)
-        reviews = review_form.save(commit=False)
-        reviews.author = request.user
-        reviews.save()
+        review = review_form.save(commit=False)
+        review.author = request.user
+        review.article = detail 
+        review.save()
 
     review_form = ReviewForm()
     

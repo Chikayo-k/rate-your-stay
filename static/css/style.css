@@ -114,9 +114,11 @@ footer{
     color: white;
     width: 100%;
     padding: 2%;
+    margin-top: 10%;
     display:flex;
     justify-content:space-between;
     align-items: center;
+    
 }
 
 .social-media{ 
@@ -223,6 +225,7 @@ footer{
 
 /* Detail Page */
 
+
 .detail-section{
     margin-top: 5%;
 }
@@ -311,7 +314,7 @@ footer{
 .review-form{
  width: 60%;
  margin-left: 20%;
- margin-bottom: 5%;
+ margin-bottom: 30%;
 }
 
 .stars{
@@ -326,6 +329,8 @@ footer{
     flex-direction:column;
     margin: 2% 0;
 }
+
+
 
 
 /* About Us */

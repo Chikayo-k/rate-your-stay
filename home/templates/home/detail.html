@@ -3,7 +3,7 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-<main>
+<main class="detail">
      
     <section class="detail-section">
      <div class="container detail-top">
@@ -75,7 +75,7 @@
       <div class="review-form">
          <form id="commentForm" method="post">
           <p>Review as : {{ user.username }}</p>
-          <div class="mb-3">   
+          <div>   
               <p>Write a review for : {{article.title}}</p>
               <select class="form-select stars" aria-label="Default select example">
                 <option selected>Rate this holiday</option>
@@ -86,21 +86,19 @@
                 <option  value="5">★★★★★</option>
               </select>
           </div>
-          <div class="mb-3">
+          <div>
             <label class="form-label" for="review-title">Title</label>
             <input class="form-control" type="text">
+            {{ review_form | crispy }}
+            {% csrf_token %}
+  
           </div>
-          <div class="mb-3">
-              {{ review_form | crispy }}
-              {% csrf_token %}
-              <button  type="submit" class="btn btn-primary">Submit</button>
+          <button  type="submit" class="submit-btn btn btn-primary">Submit</button>
          </form>
-        </div> 
-      </div>     
+      </div>    
     </section>
      
-     {% endif %}
 
-
+    {% endif %}
 </main>
 {% endblock content %}

@@ -6,7 +6,7 @@ from cloudinary.models import CloudinaryField
 
 CATEGORY_CHOICES=(0,'Beach'),(1,'History'),(2,'City')
 STATUS=(0,'Draft'),(0,'Published')
-RATE=(0,0),(1,1),(2,2),(3,3),(4,4),(5,5)
+RATE=(0,'Rate your stay'),(1,'★'),(2,'★★'),(3,'★★★'),(4,'★★★★'),(5,'★★★★★')
 
 class Article(models.Model):
     title = models.CharField(max_length=30, unique=True)

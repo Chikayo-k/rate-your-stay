@@ -41,6 +41,8 @@ def detail(request, slug):
 class Reviews(generic.ListView):
     
     queryset = Reviews.objects.all()
+    # model = Reviews
+    # fields = '__all__'
     template_name = 'home/add_reviews.html'      
    
     def get_context_data(self, *args, **kwargs):

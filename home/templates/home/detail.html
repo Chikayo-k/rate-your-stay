@@ -51,6 +51,21 @@
           </div>
           <div class="col-12 col-sm-8 col-lg-9">
             <h4>{{review.review_title}}</h4>
+            {% if review.rate == 1 %}
+            <p>No Rating</p>
+            {% if review.rate == 1 %}
+            <p>★</p>
+            {% elif review.rate == 2 %}
+            <p>★★</p>
+            {% elif review.rate == 3 %}
+            <p>★★★</p>
+            {% elif review.rate == 4 %}
+            <p>★★★★</p>
+            {% elif review.rate == 5 %}
+            <p>★★★★★</p>
+            {% endif%}
+
+            <p>{{review.rate}}</p>
             <p>{{review.comment_area}}</p>
             <p>{{review.comment_date}}</p>        
           </div>                 
@@ -77,14 +92,7 @@
           <p>Review as : {{ user.username }}</p>
           <div>   
               <p>Write a review for : {{article.title}}</p>
-              <select class="form-select stars" aria-label="Default select example">
-                <option selected>Rate this holiday</option>
-                <option  value="1">★</option>
-                <option  value="2">★★</option>
-                <option  value="3">★★★</option>
-                <option  value="4">★★★★</option>
-                <option  value="5">★★★★★</option>
-              </select>
+  
           </div>
           <div>
             <label class="form-label" for="review-title">Title</label>

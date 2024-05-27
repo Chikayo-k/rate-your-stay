@@ -1,4 +1,4 @@
-from .models import Reviews
+from .models import Reviews, Article
 from django import forms
 
 class ReviewForm(forms.ModelForm):

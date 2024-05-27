@@ -41,12 +41,30 @@ def detail(request, slug):
 class Reviews(generic.ListView):
     
     queryset = Reviews.objects.all()
-    template_name = 'home/add_reviews.html'
-
+    template_name = 'home/add_reviews.html'      
+   
     def get_context_data(self, *args, **kwargs):
         article = super().get_context_data(*args, **kwargs)
-        article['article_lists'] = Article.objects.all()
+        article['article_lists'] = Article.objects.all()           
         return article
+             
+        # def submit(self,request):       
+        #     if  request.method == "POST":  
+        #         review_form = ReviewForm(data=request.POST)
+        #         if review_form.is_valid():
+        #             review = review_form.save(commit=False)
+        #             review.author = request.user
+        #             review.article = detail 
+        #             review.save()
+        #     else:
+        #         review_form = ReviewForm()
+
+        #     return render(
+        #          request,
+        #         'home/add_review.html',            
+        #         {
+        #         'review_from':review_form,
+        #     })
 
  
     

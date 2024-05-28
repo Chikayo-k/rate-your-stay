@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
+from django.contrib import messages
 from .models import Article,Reviews
 from .forms import ReviewForm
 # import cloudinary.uploader
@@ -28,6 +29,10 @@ def detail(request, slug):
             review.article = detail 
             # reviews.post_image = UploadedImage()
             review.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Comment submitted Thank you!!'
+            )            
 
     review_form = ReviewForm()
     

@@ -56,6 +56,20 @@ body{
     color: white;
 }
 
+/* confirmantion message */
+.conf-box{
+    padding: 0;
+}
+
+.conf-message{
+    background-color: rgb(5, 106, 5);
+    color: white;
+    text-align: center;
+}
+
+.btn-close{
+  color: white;
+}
 
 /* Article section */
 #articles{

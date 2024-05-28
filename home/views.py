@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from .models import Article,Reviews
 from .forms import ReviewForm
+# import cloudinary.uploader
 
 # Create your views here.
 
@@ -19,10 +20,14 @@ def detail(request, slug):
 
     if request.method == "POST":    
         review_form = ReviewForm(data=request.POST)
-        review = review_form.save(commit=False)
-        review.author = request.user
-        review.article = detail 
-        review.save()
+        if review_form .is_valid():
+            # post_image = review_form.cleaned_data['post_image']
+            # result = cloudinary.uploader.upload(post_image)      
+            review = review_form.save(commit=False)
+            review.author = request.user
+            review.article = detail 
+            # reviews.post_image = UploadedImage()
+            review.save()
 
     review_form = ReviewForm()
     

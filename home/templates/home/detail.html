@@ -40,72 +40,66 @@
 
       <!-- Review -->
       {% if reviews %} 
-      <div class="comment-count">
-        <i class="fa-regular fa-message"> {{reviews_count}} </i>
-      </div>
-      {% for review in reviews %} 
-        <div class="container review-container">
-        <div class="row">
-          <div class="col-12 col-sm-4 col-lg-3 review-img-container">
-            <img class="img-fluid review-img" src="{{article.detail_image.url}}" alt="">  
-          </div>
-          <div class="col-12 col-sm-8 col-lg-9">
-            <h4>{{review.review_title}}</h4>
-            {% if review.rate == 1 %}
-            <p>No Rating</p>
-            {% if review.rate == 1 %}
-            <p>★</p>
-            {% elif review.rate == 2 %}
-            <p>★★</p>
-            {% elif review.rate == 3 %}
-            <p>★★★</p>
-            {% elif review.rate == 4 %}
-            <p>★★★★</p>
-            {% elif review.rate == 5 %}
-            <p>★★★★★</p>
-            {% endif%}
-
-            <p>{{review.rate}}</p>
-            <p>{{review.comment_area}}</p>
-            <p>{{review.comment_date}}</p>        
-          </div>                 
+        <div class="comment-count">
+          <i class="fa-regular fa-message"> {{reviews_count}} </i>
         </div>
-      </div> 
-      {% endfor %}
-      {% else %}
-      <p class="no-review">No reviews have been posted yet</p>
+          {% for review in reviews %} 
+              <div class="container review-container">
+              <div class="row">
+                <div class="col-12 col-sm-4 col-lg-3 review-img-container">
+                  <img class="img-fluid review-img" src="{{article.detail_image.url}}" alt="">  
+                </div>
+                <div class="col-12 col-sm-8 col-lg-9">
+                  <h4>{{review.review_title}}</h4>
+                    {% if review.rate == 0 %}
+                    <p>No Reviews</p>
+                    {% elif review.rate == 1 %}
+                    <p>★</p>
+                    {% elif review.rate == 2 %}
+                    <p>★★</p>
+                    {% elif review.rate == 3 %}
+                    <p>★★★</p>
+                    {% elif review.rate == 4 %}
+                    <p>★★★★</p>
+                    {% elif review.rate == 5 %}
+                    <p>★★★★★</p>
+                    {% endif %}
+                  <p>{{review.rate}}</p>
+                  <p>{{review.comment_area}}</p>
+                  <p>{{review.comment_date}}</p>        
+                </div>                 
+              </div>
+            </div> 
+          {% endfor %}
+        {% else %}
+        <p class="no-review">No reviews have been posted yet</p>
       {% endif %}
-     
-    </section>
+      
+      </section>
 
-
-
-
-    {% if user.is_authenticated %}
-    <section id="add-review-section" class="container-fluid vh-100 x">
-      <h2 class="review-title">Review Form</h2>
-      <p class="review-leadmessage">Let's share your holiday experience !! To share your experience, please fill out this form down below.</p>
-     
-     <!-- Form -->
-      <div class="review-form">
-         <form id="commentForm" method="post">
-          <p>Review as : {{ user.username }}</p>
-          <div>   
-              <p>Write a review for : {{article.title}}</p>
-  
-          </div>
-          <div>
-            <label class="form-label" for="review-title">Title</label>
-            <input class="form-control" type="text">
-            {{ review_form | crispy }}
-            {% csrf_token %}
+      {% if user.is_authenticated %}
+      <section id="add-review-section" class="container-fluid vh-100 x">
+        <h2 class="review-title">Review Form</h2>
+        <p class="review-leadmessage">Let's share your holiday experience !! To share your experience, please fill out this form down below.</p>
+      
+      <!-- Form -->
+        <div class="review-form">
+          <form id="commentForm" method="post">
+            <p>Review as : {{ user.username }}</p>
+            <div>   
+                <p>Write a review for : {{article.title}}</p>
+    
             </div>
-          <button  type="submit" class="submit-btn btn btn-primary">Submit</button>
-         </form>
-      </div>    
-    </section>
-     
-
+            <div>
+              <label class="form-label" for="review-title">Title</label>
+              <input class="form-control" type="text">
+              {{ review_form | crispy }}
+              {% csrf_token %}
+              </div>
+            <button  type="submit" class="submit-btn btn btn-primary">Submit</button>
+          </form>
+        </div>    
+      </section>
     {% endif %}
 </main>
 {% endblock content %}

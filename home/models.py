@@ -1,6 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Create your models here.
 
@@ -18,7 +21,6 @@ class Article(models.Model):
     detail_image = CloudinaryField('detail image', default='placeholder')
     status = models.IntegerField(choices=STATUS, default=0)
     
-
     def __str__(self):
         return f'Article Name: {self.title}'
 
@@ -29,6 +31,7 @@ class Reviews(models.Model):
     rate = models.IntegerField(choices=RATE, default=0)
     comment_area = models.TextField()
     comment_date = models.DateTimeField(auto_now_add= True)
+    post_image = CloudinaryField('Post image', blank=True, null=True )
 
     class Meta:
         ordering = ['-comment_date']

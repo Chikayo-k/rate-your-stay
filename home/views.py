@@ -1,6 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404,reverse
 from django.views import generic
 from django.contrib import messages
+from django.http import HttpResponseRedirect
 from .models import Article,Reviews
 from .forms import ReviewForm
 # import cloudinary.uploader
@@ -80,6 +81,27 @@ class Reviews(generic.ListView):
 
  
     
+def review_edit(request, slug, comment_id):
 
+    if request.method == "POST":
+
+        queryset = Article.objects.filter(status = 1)
+        article = get_object_or_404(queryset, slug=slug)
+        review = get_object_or_404(Review,pk=article_id)
+        review_form = ReviewForm(data=request.Post, instance=review)
+
+        if review_form.is_valid() and review.author == request.user:
+            review = review_form.save(commit=False)
+            review.post = Post
+            review.approverd = False
+            review.save()
+            messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
+        else:
+             messages.add_message(request, messages.ERROR, 'Error Comment Updating')
+        
+        return HttpResponseRedirect(revierse('detail', args=[slug]))
+
+
+    
    
 

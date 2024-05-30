@@ -49,7 +49,7 @@
                 <div class="col-12 col-sm-4 col-lg-3 review-img-container">
                   <img class="img-fluid review-img" src="{{article.detail_image.url}}" alt="">  
                 </div>
-                <div class="col-12 col-sm-8 col-lg-9">
+                <div class="col-12 col-sm-8 col-lg-9 review-details">
                   <h4>{{review.review_title}}</h4>
                     {% if review.rate == 0 %}
                     <p>No Reviews</p>
@@ -65,7 +65,9 @@
                     <p>★★★★★</p>
                     {% endif %}
                   <p>{{review.comment_area}}</p>
-                  <p>{{review.comment_date}}</p>        
+                  <p>{{review.comment_date}}</p>     
+                  <button class="btn btn-sm edit-btn"
+                  review_id="{{ review.id }}">Edit</button>
                 </div>                 
               </div>
             </div> 
@@ -73,6 +75,11 @@
         {% else %}
         <p class="no-review">No reviews have been posted yet</p>
       {% endif %}
+      <!-- {% if user.is_authenticated and review.author == user %} -->
+      <button class="btn btn-edit"
+        review_id="{{ review.id }}">Edit</button>
+      <!-- {% endif %} -->
+     
       
       </section>
 
@@ -100,5 +107,7 @@
         </div>    
       </section>
     {% endif %}
+
+
 </main>
 {% endblock content %}

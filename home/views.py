@@ -48,6 +48,28 @@ def detail(request, slug):
         },
     )
 
+        
+def review_edit(request, slug, comment_id):
+
+    if request.method == "POST":
+
+        queryset = Article.objects.filter(status = 1)
+        article = get_object_or_404(queryset, slug=slug)
+        review = get_object_or_404(Review,pk=review_id)
+        review_form = ReviewForm(data=request.Post, instance=review)
+
+        if review_form.is_valid() and review.author == request.user:
+            review = review_form.save(commit=False)
+            review.post = Post
+            review.approverd = False
+            review.save()
+            messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
+        else:
+             messages.add_message(request, messages.ERROR, 'Error Comment Updating')
+        
+        return HttpResponseRedirect(revierse('detail', args=[slug]))
+
+
 
 class Reviews(generic.ListView):
     
@@ -80,26 +102,6 @@ class Reviews(generic.ListView):
         #     })
 
  
-    
-def review_edit(request, slug, comment_id):
-
-    if request.method == "POST":
-
-        queryset = Article.objects.filter(status = 1)
-        article = get_object_or_404(queryset, slug=slug)
-        review = get_object_or_404(Review,pk=article_id)
-        review_form = ReviewForm(data=request.Post, instance=review)
-
-        if review_form.is_valid() and review.author == request.user:
-            review = review_form.save(commit=False)
-            review.post = Post
-            review.approverd = False
-            review.save()
-            messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
-        else:
-             messages.add_message(request, messages.ERROR, 'Error Comment Updating')
-        
-        return HttpResponseRedirect(revierse('detail', args=[slug]))
 
 
     

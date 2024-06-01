@@ -14,7 +14,7 @@
           <div class="col-12 col-lg-6 article-content">
             <div>
             <h2 class="article-title">{{article.title}}</h2>
-            <p>{{article.content}}</p>
+            <p>{{article.content | linebreaks}}</p>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
                     {% elif review.rate == 5 %}
                     <p>★★★★★</p>
                     {% endif %}
-                  <p>{{review.comment_area}}</p>
+                  <p>{{review.comment_area | linebreaks }}</p>
                   <p>{{review.comment_date}}</p>     
                   <button class="btn btn-sm edit-btn"
                   review_id="{{ review.id }}">Edit</button>
@@ -75,10 +75,11 @@
         {% else %}
         <p class="no-review">No reviews have been posted yet</p>
       {% endif %}
-      <!-- {% if user.is_authenticated and review.author == user %} -->
+      <!-- Edit button -->
+      {% if user.is_authenticated and review.author == user %}
       <button class="btn btn-edit"
         review_id="{{ review.id }}">Edit</button>
-      <!-- {% endif %} -->
+      {% endif %}
      
       
       </section>
@@ -90,7 +91,7 @@
       
       <!-- Form -->
         <div class="review-form">
-          <form id="commentForm" method="post">
+          <form id="reviewForm" method="post">
             <p>Review as : {{ user.username }}</p>
             <div>   
                 <p>Write a review for : {{article.title}}</p>
@@ -102,7 +103,7 @@
               {{ review_form | crispy }}
               {% csrf_token %}
               </div>
-            <button  type="submit" class="submit-btn btn btn-primary">Submit</button>
+            <button id="submitBtn"  type="submit" class="submit-btn btn btn-primary">Submit</button>
           </form>
         </div>    
       </section>
@@ -111,3 +112,7 @@
 
 </main>
 {% endblock content %}
+
+{% block extras %}
+<script src="{% static 'js/review.js' %}"></script>
+{% endblock %}

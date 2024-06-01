@@ -1,14 +1,16 @@
-const editBtn = document.getElementsByClassName("edit-btn");
-const reviewText = document.getElementById("id_body");
+const editBtns = document.getElementsByClassName("edit-btn");
+const reviewText = document.getElementById("id_comment_area");
 const reviewForm = document.getElementById("reviewForm");
 const submitBtn = document.getElementById("submitBtn");
 
-for(let btn of editBtn){
+for(let btn of editBtns){
     btn.addEventListener("click",(e)=>{
-        let reviewId = e.target.getAttribute("review_id");
-        let reviewContent = document.getElementById('review${reviewId}').innerText;
+        let reviewId =  e.target.getAttribute("review_id");
+        let reviewContent = document.getElementById(`review${reviewId}`).innerText;
         reviewText.value = reviewContent;
         submitBtn.innerText = "Update";
-        commentForm.setAttribute("action", `edit_review/${reviewId}`);
+        reviewForm.setAttribute("action", `edit_review/${reviewId}`);
+        console.log(reviewContent);
     })
 }
+

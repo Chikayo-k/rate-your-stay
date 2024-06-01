@@ -31,7 +31,7 @@
         <a class="nav-link write-review" href="#add-review-section">Write Review</a>
       </div>
       <div class="write-review-btn2">
-        <a class="nav-link write-review" href="{% url 'reviews' %}">Write Review for different article</a>
+       
       </div>
       {% else %}
       <p class="message-review">If you wish to share your holiday experience, please log In first.</p>
@@ -50,7 +50,7 @@
                   <img class="img-fluid review-img" src="{{article.detail_image.url}}" alt="">  
                 </div>
                 <div class="col-12 col-sm-8 col-lg-9 review-details">
-                  <h4>{{review.review_title}}</h4>
+                  <h4>Title: {{review.review_title}}</h4>
                     {% if review.rate == 0 %}
                     <p>No Reviews</p>
                     {% elif review.rate == 1 %}
@@ -64,8 +64,9 @@
                     {% elif review.rate == 5 %}
                     <p>★★★★★</p>
                     {% endif %}
-                  <p>{{review.comment_area | linebreaks }}</p>
+                  <div id="review{{review.id}}">{{review.comment_area|linebreaks }}</div>
                   <p>{{review.comment_date}}</p>  
+                  <!-- Edit button -->
                   {% if user.is_authenticated and review.author == user %} 
                   <button class="btn btn-sm edit-btn"
                   review_id="{{ review.id }}">Edit</button>
@@ -77,12 +78,6 @@
         {% else %}
         <p class="no-review">No reviews have been posted yet</p>
       {% endif %}
-      <!-- Edit button -->
-      {% if user.is_authenticated and review.author == user %}
-      <button class="btn btn-edit"
-        review_id="{{ review.id }}">Edit</button>
-      {% endif %}
-     
       
       </section>
 
@@ -97,11 +92,9 @@
             <p>Review as : {{ user.username }}</p>
             <div>   
                 <p>Write a review for : {{article.title}}</p>
-    
+
             </div>
             <div>
-              <label class="form-label" for="review-title">Title</label>
-              <input class="form-control" type="text">
               {{ review_form | crispy }}
               {% csrf_token %}
               </div>

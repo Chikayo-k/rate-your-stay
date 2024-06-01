@@ -8,7 +8,7 @@ import cloudinary.api
 # Create your models here.
 
 CATEGORY_CHOICES=(0,'Beach'),(1,'History'),(2,'City')
-STATUS=(0,'Draft'),(0,'Published')
+STATUS=(0,'Draft'),(1,'Published')
 RATE=(0,'Rate your stay'),(1,'★'),(2,'★★'),(3,'★★★'),(4,'★★★★'),(5,'★★★★★')
 
 class Article(models.Model):

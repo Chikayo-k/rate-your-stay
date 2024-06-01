@@ -49,39 +49,39 @@ def detail(request, slug):
     )
 
         
-def review_edit(request, slug, comment_id):
+def review_edit(request, slug, review_id):
 
     if request.method == "POST":
 
         queryset = Article.objects.filter(status = 1)
         article = get_object_or_404(queryset, slug=slug)
-        review = get_object_or_404(Review,pk=review_id)
-        review_form = ReviewForm(data=request.Post, instance=review)
+        review = get_object_or_404(Reviews,pk=review_id)
+        review_form = ReviewForm(data=request.POST, instance=review)
 
         if review_form.is_valid() and review.author == request.user:
             review = review_form.save(commit=False)
-            review.post = Post
+            review.post = Reviews
             review.approverd = False
             review.save()
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
-             messages.add_message(request, messages.ERROR, 'Error Comment Updating')
+            messages.add_message(request, messages.ERROR, 'Error Comment Updating')
         
-        return HttpResponseRedirect(revierse('detail', args=[slug]))
+        return HttpResponseRedirect(reverse('detail', args=[slug]))
 
 
 
-class Reviews(generic.ListView):
+# class Reviews(generic.ListView):
     
-    queryset = Reviews.objects.all()
-    # model = Reviews
-    # fields = '__all__'
-    template_name = 'home/add_reviews.html'      
+#     queryset = Reviews.objects.all()
+#     # model = Reviews
+#     # fields = '__all__'
+#     template_name = 'home/add_reviews.html'      
    
-    def get_context_data(self, *args, **kwargs):
-        article = super().get_context_data(*args, **kwargs)
-        article['article_lists'] = Article.objects.all()           
-        return article
+#     def get_context_data(self, *args, **kwargs):
+#         article = super().get_context_data(*args, **kwargs)
+#         article['article_lists'] = Article.objects.all()           
+#         return article
              
         # def submit(self,request):       
         #     if  request.method == "POST":  

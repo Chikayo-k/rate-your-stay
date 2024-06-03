@@ -132,7 +132,6 @@ footer{
     color: white;
     width: 100%;
     padding: 2%;
-    margin-top: 10%;
     display:flex;
     justify-content:space-between;
     align-items: center;
@@ -349,7 +348,6 @@ footer{
 .review-form{
  width: 60%;
  margin-left: 20%;
- margin-bottom: 30%;
 }
 
 .stars{

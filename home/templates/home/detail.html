@@ -68,8 +68,8 @@
                   <p>{{review.comment_date}}</p>  
                   <!-- Edit button -->
                   {% if user.is_authenticated and review.author == user %} 
-                  <button class="btn btn-sm edit-btn"
-                  review_id="{{ review.id }}">Edit</button>
+                  <a href='#reviewForm' class="btn btn-sm edit-btn"
+                  review_id="{{ review.id }}">Edit</a>
                   {% endif %}
                 </div>                 
               </div>

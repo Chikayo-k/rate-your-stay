@@ -438,3 +438,8 @@ footer{
         width: 10%;
     }
 }
+
+
+.hide{
+    display:none;
+}

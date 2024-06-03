@@ -68,6 +68,21 @@ def review_edit(request, slug, review_id):
             messages.add_message(request, messages.ERROR, 'Error Comment Updating')
         
         return HttpResponseRedirect(reverse('detail', args=[slug]))
+        
+def review_delete(request, slug, review_id):
+
+    queryset = Article.objects.filter(status = 1)
+    article = get_object_or_404(queryset, slug=slug)
+    review = get_object_or_404(Reviews,pk=review_id)
+
+    if review.author == request.user:
+        review.delete()
+        messages.add_message(request, messages.SUCCESS,'Review deleted!')
+    else:
+        messages.add_message(request, messages.ERROR, 'Not Success!')
+    
+    return HttpResponseRedirect(reverse('detail', args=[slug]))
+
 
 
 

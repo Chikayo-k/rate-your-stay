@@ -146,8 +146,15 @@ footer{
     padding-right: 3%;
 }
 
-.helpcenter {
-    list-style-type: none;
+.helpcenter{
+    list-style-type: none;  
+}
+
+
+.help-center {  
+    background-color: #222831 ;
+    color: white;
+    border: none;
 }
 
 .btn-regester{

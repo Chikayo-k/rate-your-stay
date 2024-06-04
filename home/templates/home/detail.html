@@ -69,11 +69,13 @@
                   <p>{{review.comment_date}}</p>  
                   <!-- Edit button -->
                   {% if user.is_authenticated and review.author == user %} 
-                  <a href='#reviewForm' class="btn btn-sm edit-btn"
-                  review_id="{{ review.id }}">Edit</a>
-                  <button class="btn btn-delete"
-                  review_id="{{ review.id }}">Delete</button>
-                  {% endif %}
+                  <div class="edit-delet-btns">
+                    <a href='#reviewForm' class="btn btn-sm edit-btn"
+                    review_id="{{ review.id }}">Edit</a>
+                    <a  href='#'class="btn btn-sm btn-delete"
+                    review_id="{{ review.id }}">Delete</a>
+                    {% endif %}
+                  </div>
                 </div>                 
               </div>
             </div> 

@@ -329,17 +329,25 @@ footer{
     text-align: center;
 }
 
-/* Edit button */
-.edit-btn{
+/* Edit button / delete button*/
+.edit-btn,.btn-delete{
   background-color: #222831 ;
   color: white;
   width: 30%;
+  margin-bottom: 1%;
 }
 
 .edit-btn:hover{
     opacity: 0.7;
     color: white;
 }
+
+.btn-delete:hover{
+    opacity: 0.7;
+    color: white;
+}
+
+
 /* Review Form */
 
 
@@ -405,7 +413,7 @@ footer{
         border-style:groove;
 }
 
-.edit-btn{
+.edit-btn,.btn-delete{
     width: 20%;
 }
 }
@@ -413,7 +421,7 @@ footer{
 /* Over768px */
 @media screen and (min-width:768px){
 
-    .edit-btn{
+    .edit-btn,.btn-delete{
         width: 15%;
     }
 
@@ -441,7 +449,7 @@ footer{
     }
 
 
-    .edit-btn{
+    .edit-btn,.btn-delete{
         width: 10%;
     }
 }

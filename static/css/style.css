@@ -135,7 +135,7 @@ footer{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    
+    bottom: 0;
 }
 
 .social-media{ 
@@ -366,8 +366,7 @@ footer{
 }
 
 .stars{
-    margin-top: 3%;
-    
+    margin-top: 3%; 
 }
 
 .review-btns{
@@ -378,6 +377,9 @@ footer{
     margin: 2% 0;
 }
 
+#add-review-section{
+    margin-bottom: 5%;
+}
 
 
 

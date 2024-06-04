@@ -1,5 +1,4 @@
 {% load static %}
-
 {% url 'home' as home_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
@@ -36,30 +35,30 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark nav-colour" style="background:#222831 ;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{% url 'home'%}">RATE YOUR STAY</a>
+    <a class="navbar-brand" href="{% url 'home'%}"  aria-label="Late your stay logo links to Home page">RATE YOUR STAY</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'home'%}">Home</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'home'%}" aria-label="Link to Home page">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{%url 'about'%}">About Us</a>
+          <a class="nav-link" href="{%url 'about'%}" aria-label="Link to About us page">About Us</a>
         </li>
         
         {% if user.is_authenticated %}
         <li class="nav-item">
-          <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+          <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}" aria-label="Link to Logout Page">Logout</a>
         </li>
         {% else %}
         <li class="nav-item">
           <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-            href="{% url 'account_signup' %}">Register</a>
+            href="{% url 'account_signup' %}" aria-label="Link to Register page">Register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
+          <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}" aria-label="Link to Login page">Login</a>
         </li>
         {% endif %}
       </ul>
@@ -91,7 +90,7 @@
 
 <!-- Modal -->
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="helpCenterModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -103,7 +102,7 @@
         <p>Email: rate-your-self@supportdesk.com</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="A button to close helpcenter">Close</button>
       </div>
     </div>
   </div>
@@ -112,9 +111,9 @@
 
     <footer>
       <div class="social-media">       
-          <a href="https://www.facebook.com/" aria-label="Visit our Facebook page (opens in a new tub)" target="_blank"><i class="fa-brands fa-facebook-f fa-xl" style="color: #ffffff;"></i></a>
-          <a href="https://www.instagram.com/" aria-label="Visit our Instagram page (opens in a new tub)" target="_blank"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
-          <a href="https://www.youtube.com/" aria-label="Visit our YouTube page (opens in a new tub)" target="_blank"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a>
+          <a href="https://www.facebook.com/" aria-label="Visit our Facebook page (opens in a new tub)" target="_blank" aria-label="Visit our Facebook page (opens in a new tub)"><i class="fa-brands fa-facebook-f fa-xl" style="color: #ffffff;"></i></a>
+          <a href="https://www.instagram.com/" aria-label="Visit our Instagram page (opens in a new tub)" target="_blank" aria-label="Visit our Instagram page (opens in a new tub)"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+          <a href="https://www.youtube.com/" aria-label="Visit our YouTube page (opens in a new tub)" target="_blank" aria-label="Visit our Youtube page (opens in a new tub)"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a>
       </div>
       <li class="nav-item helpcenter">
         <!-- Button trigger modal -->

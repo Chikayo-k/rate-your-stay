@@ -374,7 +374,7 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction:column;
-    margin: 2% 0;
+    margin: 10% 0;
 }
 
 #add-review-section{
@@ -425,6 +425,10 @@ footer{
 
     .edit-btn,.btn-delete{
         width: 15%;
+    }
+
+    .review-btns{
+        margin: 3% 0;
     }
 
 }

@@ -3,7 +3,7 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-<main class="detail">
+<main id="detail">
      
     <section class="detail-section">
      <div class="container detail-top">
@@ -109,14 +109,16 @@ aria-labelledby="deleteModalLabel" aria-hidden="true">
   </div>
 </div>
 </div>
-      
+
+<div class="d-flex justify-content-center go-top-1">
+<a class=" go-top btn-sm" href="#detail">Back To Top</a>
+</div>   
       </section>
 
       {% if user.is_authenticated %}
       <section id="add-review-section" class="container-fluid">
         <h2 class="review-title">Review Form</h2>
         <p class="review-leadmessage">Let's share your holiday experience !! To share your experience, please fill out this form down below.</p>
-      
       <!-- Form -->
         <div class="review-form">
           <form id="reviewForm" method="post">
@@ -131,7 +133,10 @@ aria-labelledby="deleteModalLabel" aria-hidden="true">
               </div>
             <button id="submitBtn"  type="submit" class="submit-btn btn btn-primary">Submit</button>
           </form>
-        </div>    
+        </div>  
+        <div class="d-flex justify-content-center go-top-2 ">
+          <a class="go-top btn-sm" href="#detail">Back To Top</a>
+          </div>     
       </section>
     {% endif %}
 

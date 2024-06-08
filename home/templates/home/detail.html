@@ -110,9 +110,12 @@ aria-labelledby="deleteModalLabel" aria-hidden="true">
 </div>
 </div>
 
+{% if reviews_count >= 1%}
 <div class="d-flex justify-content-center go-top-1">
 <a class=" go-top btn-sm" href="#detail">Back To Top</a>
 </div>   
+{% endif %}
+
       </section>
 
       {% if user.is_authenticated %}

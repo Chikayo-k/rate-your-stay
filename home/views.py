@@ -22,13 +22,10 @@ def detail(request, slug):
 
     if request.method == "POST":    
         review_form = ReviewForm(data=request.POST)
-        if review_form .is_valid():
-            # post_image = review_form.cleaned_data['post_image']
-            # result = cloudinary.uploader.upload(post_image)      
+        if review_form .is_valid():  
             review = review_form.save(commit=False)
             review.author = request.user
             review.article = detail 
-            # reviews.post_image = UploadedImage()
             review.save()
             messages.add_message(
                 request, messages.SUCCESS,
@@ -85,38 +82,6 @@ def review_delete(request, slug, review_id):
 
 
 
-
-# class Reviews(generic.ListView):
-    
-#     queryset = Reviews.objects.all()
-#     # model = Reviews
-#     # fields = '__all__'
-#     template_name = 'home/add_reviews.html'      
-   
-#     def get_context_data(self, *args, **kwargs):
-#         article = super().get_context_data(*args, **kwargs)
-#         article['article_lists'] = Article.objects.all()           
-#         return article
-             
-        # def submit(self,request):       
-        #     if  request.method == "POST":  
-        #         review_form = ReviewForm(data=request.POST)
-        #         if review_form.is_valid():
-        #             review = review_form.save(commit=False)
-        #             review.author = request.user
-        #             review.article = detail 
-        #             review.save()
-        #     else:
-        #         review_form = ReviewForm()
-
-        #     return render(
-        #          request,
-        #         'home/add_review.html',            
-        #         {
-        #         'review_from':review_form,
-        #     })
-
- 
 
 
     

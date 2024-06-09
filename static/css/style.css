@@ -370,6 +370,9 @@ footer{
 
 /* Review Form */
 
+.form-hide{
+    display:none;
+}
 
 .review-title{
     text-align: center;

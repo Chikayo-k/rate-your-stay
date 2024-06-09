@@ -5,6 +5,11 @@ const reviewRating = document.getElementById("id_rate");
 const reviewForm = document.getElementById("reviewForm");
 const submitBtn = document.getElementById("submitBtn");
 let editMessage = document.getElementsByClassName("review-leadmessage")[0];
+const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
+const deleteButtons = document.getElementsByClassName("btn-delete");
+const deleteConfirm = document.getElementById("deleteConfirm");
+const writeReviewBtn = document.getElementsByClassName("write-review")[0];
+const form = document.getElementsByClassName('form-hide')[0];
 
 
 for(let btn of editBtns){
@@ -14,6 +19,7 @@ for(let btn of editBtns){
         let reviewTitleText = document.getElementById(`review${reviewId}_title`).innerText;
         let reviewRatingText = document.getElementById(`review${reviewId}_rating`).innerText;
         editMessage.innerHTML= "<p class='fw-bold fs-3'>Edit this meassage!</p>"
+        form.style.display="block";
         reviewText.value = reviewContent;
         reviewTitle.value= reviewTitleText;
         reviewRating.value = reviewRatingText;
@@ -24,9 +30,7 @@ for(let btn of editBtns){
     })
 }
 
-const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
-const deleteButtons = document.getElementsByClassName("btn-delete");
-const deleteConfirm = document.getElementById("deleteConfirm");
+
 
 for (let button of deleteButtons) {
     button.addEventListener("click", (e) => {
@@ -37,10 +41,11 @@ for (let button of deleteButtons) {
   }
 
 
-// Display a review form
-const writeReviewBtn = document.getElementsByClassName("write-review")[0];
-const form = document.getElementsByClassName('form-hide')[0];
-
+/** 
+ Display or hide a review form when the user is logged in
+*/
+function userLoggedIn(){
+// Display a review form 
 writeReviewBtn.addEventListener("click",() =>{
   form.style.display="block";
 });
@@ -49,3 +54,12 @@ writeReviewBtn.addEventListener("click",() =>{
 submitBtn.addEventListener("click",() =>{
   form.style.display="none";
 });
+}
+
+//Error handling when there is no user logged in
+try{
+  userLoggedIn();
+}catch(error){
+  console.log("not logged in")
+}
+

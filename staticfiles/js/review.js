@@ -35,3 +35,17 @@ for (let button of deleteButtons) {
       deleteModal.show();
     });
   }
+
+
+// Display a review form
+const writeReviewBtn = document.getElementsByClassName("write-review")[0];
+const form = document.getElementsByClassName('form-hide')[0];
+
+writeReviewBtn.addEventListener("click",() =>{
+  form.style.display="block";
+});
+
+//Hide a review form
+submitBtn.addEventListener("click",() =>{
+  form.style.display="none";
+});

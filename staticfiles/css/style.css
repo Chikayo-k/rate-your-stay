@@ -329,6 +329,10 @@ footer{
     text-align: center;
 }
 
+.hide{
+    display:none;
+}
+
 /* Edit button / delete button*/
 .edit-btn,.btn-delete{
   background-color: #222831 ;
@@ -347,9 +351,28 @@ footer{
     color: white;
 }
 
+.go-top{
+    color: #222831;
+}
+
+.go-top:hover{
+    color: #222831;
+    opacity: 0.7;
+}
+
+.go-top-1{
+    margin: 10% 0;
+}
+
+.go-top-2{
+    margin: 10% 0;
+}
 
 /* Review Form */
 
+.form-hide{
+    display:none;
+}
 
 .review-title{
     text-align: center;
@@ -374,7 +397,7 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction:column;
-    margin: 2% 0;
+    margin: 10% 0;
 }
 
 #add-review-section{
@@ -427,6 +450,10 @@ footer{
         width: 15%;
     }
 
+    .review-btns{
+        margin: 3% 0;
+    }
+
 }
 
 
@@ -454,9 +481,14 @@ footer{
     .edit-btn,.btn-delete{
         width: 10%;
     }
+
+    .go-top-1{
+        margin: 5% 0;
+    }
+    
+    .go-top-2{
+        margin: 5% 0;
+    }
 }
 
 
-.hide{
-    display:none;
-}

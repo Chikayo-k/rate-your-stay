@@ -29,7 +29,7 @@
           {% if article.status == 1 %}
         <div class="card md-4 m-4 cover" style="width: 18rem;">
           {% if 'placeholder' in article.article_image.url %}
-            <img class="card-img-top" src="{% static 'images/default.jpg'%}" alt="Card image">
+            <img class="card-img-top" src="{% static 'images/default.webp'%}" alt="Card image">
           {% else %}
             <img class="card-img-top" src="{{ article.article_image.url}}" alt="Card image">
           {% endif %}

@@ -59,6 +59,6 @@ submitBtn.addEventListener("click",() =>{
 try{
   userLoggedIn();
 }catch(error){
-  console.log("not logged in")
+  //Not logged in
 }
 

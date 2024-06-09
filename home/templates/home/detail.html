@@ -134,6 +134,7 @@ aria-labelledby="deleteModalLabel" aria-hidden="true">
               {% csrf_token %}
               </div>
             <button id="submitBtn"  type="submit" class="submit-btn btn btn-primary">Submit</button>
+            <a class="go-top btn-sm" href="{% url 'detail' article.slug %}">Quit</a>
           </form>
         </div>  
         <div class="d-flex justify-content-center go-top-2 ">

@@ -32,7 +32,7 @@ body{
 }
 
 .lead-register-btn{
-    background-color:#FF5722;
+    background-color:#E03300;
     color: white;
 }
 
@@ -158,8 +158,8 @@ footer{
 }
 
 .btn-regester{
-    background-color: #FF5722;
-    border: #FF5722;
+    background-color:#E03300;
+    border: #E03300;
 }
 
 
@@ -187,8 +187,8 @@ footer{
 }
 
 .btn-signup{
-    background-color:  #FF5722;
-    border: #FF5722;
+    background-color:#E03300;
+    border: #E03300;
     color: white;
     margin-top: 10%;
 }
@@ -239,8 +239,8 @@ footer{
 }
 
 .signup-btn{
-    background-color: #FF5722;
-    border: #FF5722;
+    background-color:#E03300;
+    border:#E03300;
     color: white;
     padding: 2%;
     margin-top: 5%;
@@ -297,8 +297,8 @@ footer{
 }
 
 .write-review{
-    background-color: #FF5722;
-    border: #FF5722;
+    background-color: #E03300;
+    border:#E03300;
     color: white;
     font-weight: bold;
     margin: 3% 0;

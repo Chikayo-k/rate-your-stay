@@ -14,7 +14,7 @@
           <div class="col-12 col-lg-6 article-content">
             <div>
             <h2 class="article-title">{{article.title}}</h2>
-            <p>{{article.content | linebreaks}}</p>
+            {{article.content | linebreaks}}
             </div>
           </div>
         </div>
@@ -70,10 +70,10 @@
                   <!-- Edit button -->
                   {% if user.is_authenticated and review.author == user %} 
                   <div class="edit-delet-btns">
-                    <a href='#add-review-section' class="btn btn-sm edit-btn"
-                    review_id="{{ review.id }}">Edit</a>
-                    <a  href='#'class="btn btn-sm btn-delete"
-                    review_id="{{ review.id }}">Delete</a>
+                    <a href='#add-review-section'><button class="btn btn-sm edit-btn"
+                    data-review_id="{{ review.id }}">Edit</button></a>
+                    <button class="btn btn-sm btn-delete"
+                    data-review_id="{{ review.id }}">Delete</button>
                     {% endif %}
                   </div>
                 </div>                 

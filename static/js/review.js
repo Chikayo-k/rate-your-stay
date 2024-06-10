@@ -14,7 +14,7 @@ const form = document.getElementsByClassName('form-hide')[0];
 
 for(let btn of editBtns){
     btn.addEventListener("click",(e)=>{
-        let reviewId =  e.target.getAttribute("review_id");
+        let reviewId =  e.target.getAttribute("data-review_id");
         let reviewContent = document.getElementById(`review${reviewId}`).innerText;
         let reviewTitleText = document.getElementById(`review${reviewId}_title`).innerText;
         let reviewRatingText = document.getElementById(`review${reviewId}_rating`).innerText;
@@ -33,7 +33,7 @@ for(let btn of editBtns){
 
 for (let button of deleteButtons) {
     button.addEventListener("click", (e) => {
-      let reviewId = e.target.getAttribute("review_id");
+      let reviewId = e.target.getAttribute("data-review_id");
       deleteConfirm.href = `review_delete/${reviewId}`;
       deleteModal.show();
     });

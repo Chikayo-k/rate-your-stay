@@ -70,12 +70,12 @@
                   <!-- Edit button -->
                   {% if user.is_authenticated and review.author == user %} 
                   <div class="edit-delet-btns">
-                    <a href='#add-review-section'><button class="btn btn-sm edit-btn"
-                    data-review_id="{{ review.id }}">Edit</button></a>
+                    <button class="btn btn-sm edit-btn"
+                    data-review_id="{{ review.id }}">Edit</button>
                     <button class="btn btn-sm btn-delete"
                     data-review_id="{{ review.id }}">Delete</button>
-                    {% endif %}
                   </div>
+                    {% endif %}                 
                 </div>                 
               </div>
             </div> 

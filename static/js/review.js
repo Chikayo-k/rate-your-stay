@@ -61,4 +61,3 @@ try{
 }catch(error){
   //Not logged in
 }
-

@@ -1,9 +1,31 @@
-
-/* Home page */
-
 body{
     margin: 0;
     min-height: 100vh;
+    /*Font style*/
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100%;
+}
+
+/*Font size*/
+p{
+    font-size: 1em;
+}
+
+h1{
+   font-size: 2.5em;
+}
+
+/* Home page */
+
+/*Font style for the logo*/
+.title{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
 }
 
 #hero-img{
@@ -24,7 +46,6 @@ body{
     display: flex;
     align-items: center;
 }
-
 
 .lead-message .register-btn .login-btn{
     display: flex;

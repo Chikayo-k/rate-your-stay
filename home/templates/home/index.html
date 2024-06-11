@@ -17,6 +17,9 @@
                <a class="lead-login-btn nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
                {% endif %}
             </div>
+            {% if user.is_authenticated %}
+            <p class='logged-in-user'>Logged in as {{ user }}</p>
+            {% endif %}
          </div>
       </div>
    </section>

@@ -2,151 +2,137 @@
 {% block content %}
 {% load static %}
 {% load crispy_forms_tags %}
-
 <main id="detail">
-     
-    <section class="detail-section">
-     <div class="container detail-top">
-        <div class="row">
-          <div class="col-12 col-lg-6">
-            <img class="img-fluid" src="{{article.detail_image.url}}" alt="Article image">
-          </div>
-          <div class="col-12 col-lg-6 article-content">
-            <div>
-            <h2 class="article-title">{{article.title}}</h2>
-            {{article.content | linebreaks}}
+   <section class="detail-section">
+      <div class="container detail-top">
+         <div class="row">
+            <div class="col-12 col-lg-6">
+               <img class="img-fluid" src="{{article.detail_image.url}}" alt="Article image">
             </div>
-          </div>
-        </div>
+            <div class="col-12 col-lg-6 article-content">
+               <div>
+                  <h2 class="article-title">{{article.title}}</h2>
+                  {{article.content | linebreaks}}
+               </div>
+            </div>
+         </div>
       </div>
-    </section>
-
-    <section class="review-section">
+   </section>
+   <section class="review-section">
       <h2 class="review-title">Explore Reviews</h2>
-
       <!-- Write Review button -->
       {% if user.is_authenticated %}
       <div class="review-btns">
-      <div class="write-review-btn1">
-        <a class="nav-link write-review" href="#add-review-section">Write Review</a>
+         <div class="write-review-btn1">
+            <a class="nav-link write-review" href="#add-review-section">Write Review</a>
+         </div>
+         <div class="write-review-btn2">
+         </div>
+         {% else %}
+         <p class="message-review">If you wish to share your holiday experience, please log In first.</p>
+         {% endif %}
       </div>
-      <div class="write-review-btn2">
-       
-      </div>
-      {% else %}
-      <p class="message-review">If you wish to share your holiday experience, please log In first.</p>
-      {% endif %}
-    </div>
-
       <!-- Review -->
       {% if reviews %} 
-        <div class="comment-count">
-          <i class="fa-regular fa-message"> {{reviews_count}} </i>
-        </div>
-          {% for review in reviews %} 
-              <div class="container review-container">
-              <div class="row">
-                <div class="col-12 col-sm-4 col-lg-3 review-img-container">
-                  <img class="img-fluid review-img" src="{{article.detail_image.url}}" alt="Article image">  
-                </div>
-                <div  class="col-12 col-sm-8 col-lg-9 review-details">
-                  <h4 id="review{{review.id}}_title">{{review.review_title}}</h4>
-                  <p id="review{{review.id}}_rating" class="hide">{{review.rate}}</p>
-                    {% if review.rate == 0 %}
-                    <p>No Reviews</p>
-                    {% elif review.rate == 1 %}
-                    <p>★</p>
-                    {% elif review.rate == 2 %}
-                    <p>★★</p>
-                    {% elif review.rate == 3 %}
-                    <p>★★★</p>
-                    {% elif review.rate == 4 %}
-                    <p>★★★★</p>
-                    {% elif review.rate == 5 %}
-                    <p>★★★★★</p>
-                    {% endif %}
-                  <div id="review{{review.id}}">{{review.comment_area|linebreaks }}</div>
-                  <p>{{review.comment_date}}</p>  
-                  <!-- Edit button -->
-                  {% if user.is_authenticated and review.author == user %} 
-                  <div class="edit-delete-btns">
-                    <button class="btn btn-sm edit-btn"
-                    data-review_id="{{ review.id }}">Edit</button>
-                    <button class="btn btn-sm btn-delete"
-                    data-review_id="{{ review.id }}">Delete</button>
-                  </div>
-                    {% endif %}                 
-                </div>                 
-              </div>
-            </div> 
-          {% endfor %}
-        {% else %}
-        <p class="no-review">No reviews have been posted yet</p>
+      <div class="comment-count">
+         <i class="fa-regular fa-message"> {{reviews_count}} </i>
+      </div>
+      {% for review in reviews %} 
+      <div class="container review-container">
+         <div class="row">
+            <div class="col-12 col-sm-4 col-lg-3 review-img-container">
+               <img class="img-fluid review-img" src="{{article.detail_image.url}}" alt="Article image">  
+            </div>
+            <div  class="col-12 col-sm-8 col-lg-9 review-details">
+               <h4 id="review{{review.id}}_title">{{review.review_title}}</h4>
+               <p id="review{{review.id}}_rating" class="hide">{{review.rate}}</p>
+               {% if review.rate == 0 %}
+               <p>No Reviews</p>
+               {% elif review.rate == 1 %}
+               <p>★</p>
+               {% elif review.rate == 2 %}
+               <p>★★</p>
+               {% elif review.rate == 3 %}
+               <p>★★★</p>
+               {% elif review.rate == 4 %}
+               <p>★★★★</p>
+               {% elif review.rate == 5 %}
+               <p>★★★★★</p>
+               {% endif %}
+               <div id="review{{review.id}}">{{review.comment_area|linebreaks }}</div>
+               <p>{{review.comment_date}}</p>
+               <!-- Edit button -->
+               {% if user.is_authenticated and review.author == user %} 
+               <div class="edit-delete-btns">
+                  <button class="btn btn-sm edit-btn"
+                     data-review_id="{{ review.id }}">Edit</button>
+                  <button class="btn btn-sm btn-delete"
+                     data-review_id="{{ review.id }}">Delete</button>
+               </div>
+               {% endif %}                 
+            </div>
+         </div>
+      </div>
+      {% endfor %}
+      {% else %}
+      <p class="no-review">No reviews have been posted yet</p>
       {% endif %}
-
-
       <!-- Delete confirmation modal -->
-<div class="modal fade" id="deleteModal" tabindex="-1"
-aria-labelledby="deleteModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title"
-        id="deleteModalLabel">Delete comment?</h5>
-      <button type="button" class="btn-close"
-        data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-      Are you sure you want to delete your comment?
-      This action cannot be undone.
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary"
-        data-bs-dismiss="modal">Close</button>
-      <a id="deleteConfirm" href="#" class="btn
-        btn-danger">Delete</a>
-    </div>
-  </div>
-</div>
-</div>
-
-{% if reviews_count >= 1%}
-<div class="d-flex justify-content-center go-top-1">
-<a class=" go-top btn-sm" href="#detail">Back To Top</a>
-</div>   
-{% endif %}
-
-      </section>
-
-      {% if user.is_authenticated %}
-      <section id="add-review-section" class="container-fluid form-hide">    
+      <div class="modal fade" id="deleteModal" tabindex="-1"
+         aria-labelledby="deleteModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title"
+                     id="deleteModalLabel">Delete comment?</h5>
+                  <button type="button" class="btn-close"
+                     data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  Are you sure you want to delete your comment?
+                  This action cannot be undone.
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary"
+                     data-bs-dismiss="modal">Close</button>
+                  <a id="deleteConfirm" href="#" class="btn
+                     btn-danger">Delete</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      {% if reviews_count >= 1%}
+      <div class="d-flex justify-content-center go-top-1">
+         <a class=" go-top btn-sm" href="#detail">Back To Top</a>
+      </div>
+      {% endif %}
+   </section>
+   {% if user.is_authenticated %}
+   <section id="add-review-section" class="container-fluid form-hide">
       <!-- Form -->
-        <div class="review-form">
-          <h2 class="review-title">Review Form</h2>
-          <p class="review-lead-message">Let's share your holiday experience !! To share your experience, please fill out this form down below.</p>
-          <form id="reviewForm" method="post">
+      <div class="review-form">
+         <h2 class="review-title">Review Form</h2>
+         <p class="review-lead-message">Let's share your holiday experience !! To share your experience, please fill out this form down below.</p>
+         <form id="reviewForm" method="post">
             <p>Review as : {{ user.username }}</p>
-            <div>   
-                <p>Write a review for : {{article.title}}</p>
+            <div>
+               <p>Write a review for : {{article.title}}</p>
             </div>
             <div>
-              {{ review_form | crispy }}
-              {% csrf_token %}
-              </div>
+               {{ review_form | crispy }}
+               {% csrf_token %}
+            </div>
             <button id="submitBtn"  type="submit" class="submit-btn btn btn-primary">Submit</button>
             <a class="go-top btn-sm" href="{% url 'detail' article.slug %}">Quit</a>
-          </form>
-        </div>  
-        <div class="d-flex justify-content-center go-top-2 ">
-          <a class="go-top btn-sm" href="#detail">Back To Top</a>
-          </div>     
-      </section>
-    {% endif %}
-
-
+         </form>
+      </div>
+      <div class="d-flex justify-content-center go-top-2 ">
+         <a class="go-top btn-sm" href="#detail">Back To Top</a>
+      </div>
+   </section>
+   {% endif %}
 </main>
 {% endblock content %}
-
 {% block extras %}
 <script src="{% static 'js/review.js' %}"></script>
 {% endblock %}

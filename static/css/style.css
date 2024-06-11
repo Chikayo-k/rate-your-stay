@@ -501,6 +501,10 @@ footer {
     h1 {
         font-size: 3em;
     }
+
+	a{
+		font-size: 1.3em;
+	}
     
 	#hero-img {
 		justify-content: initial;

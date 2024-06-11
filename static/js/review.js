@@ -27,7 +27,7 @@ for(let btn of editBtns){
         submitBtn.innerText = "Update";
         reviewForm.setAttribute("action", `edit_review/${reviewId}`);
         writeReviewBtn.style.display="none"
-    })
+    });
 }
 
 for (let button of deleteButtons) {

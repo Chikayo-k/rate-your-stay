@@ -1,77 +1,69 @@
 {% extends "base.html" %}
-
 {% block content %}
 {% load static%}
-
 <main>
-<section id="hero-img">
-  <div class="lead-message-container">
-    <div class="lead-message-inner-container">
-      <h2 class="lead-message">Travel Reviews</h2>
-      <p class="lead-message">Share Your Holiday Experience</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center lead-btns">
-         {% if user.is_authenticated %}
-         <a class="lead-logout-btn nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
-         {% else %}
-         <a class="lead-register-btn nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
-         href="{% url 'account_signup' %}">Register</a>
-         <a class="lead-login-btn nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
-         {% endif %}
+   <section id="hero-img">
+      <div class="lead-message-container">
+         <div class="lead-message-inner-container">
+            <h2 class="lead-message">Travel Reviews</h2>
+            <p class="lead-message">Share Your Holiday Experience</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center lead-btns">
+               {% if user.is_authenticated %}
+               <a class="lead-logout-btn nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+               {% else %}
+               <a class="lead-register-btn nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                  href="{% url 'account_signup' %}">Register</a>
+               <a class="lead-login-btn nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
+               {% endif %}
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="articles">
-  <h3 class="text-center">Holiday Reviews</h3>
-  <div class="col-12 mt-3 justify-content-center justify-content-lg-start">
-    <div class="row justify-content-center justify-content-lg-center">
-          {%for article in article_list %}
-          {% if article.status == 1 %}
-        <div class="card md-4 m-4 cover" style="width: 18rem;">
-          {% if 'placeholder' in article.article_image.url %}
-            <img class="card-img-top" src="{% static 'images/default.webp'%}" alt="Card image">
-          {% else %}
-            <img class="card-img-top" src="{{ article.article_image.url}}" alt="Card image">
-          {% endif %}
-          <div class="card-body container text-center">
-            {% if article.category == 0%}
-              <p class="category-tag beach">Beach</p>
-            {% elif article.category == 1 %}
-              <p class="category-tag history">History</p>
-            {% else %}
-              <p class="category-tag city">City</p>
+   </section>
+   <section id="articles">
+      <h3 class="text-center">Holiday Reviews</h3>
+      <div class="col-12 mt-3 justify-content-center justify-content-lg-start">
+         <div class="row justify-content-center justify-content-lg-center">
+            {%for article in article_list %}
+            {% if article.status == 1 %}
+            <div class="card md-4 m-4 cover" style="width: 18rem;">
+               {% if 'placeholder' in article.article_image.url %}
+               <img class="card-img-top" src="{% static 'images/default.webp'%}" alt="Card image">
+               {% else %}
+               <img class="card-img-top" src="{{ article.article_image.url}}" alt="Card image">
+               {% endif %}
+               <div class="card-body container text-center">
+                  {% if article.category == 0%}
+                  <p class="category-tag beach">Beach</p>
+                  {% elif article.category == 1 %}
+                  <p class="category-tag history">History</p>
+                  {% else %}
+                  <p class="category-tag city">City</p>
+                  {% endif %}
+                  <p class="card-title">{{article.title}}</p>
+                  <p class="card-text text-start">{{article.description}}</p>
+                  <a href="{% url 'detail' article.slug %}" class="btn btn-explore btn-primary">Explore</a>
+               </div>
+            </div>
+            <br>
+            {% endif %} 
+            {% endfor%}
+         </div>
+      </div>
+      {% if is_paginated %}
+      <nav aria-label="Page navigation">
+         <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+            <li >
+               <a href="?page={{ page_obj.previous_page_number }}"
+                  class="page-link next">&laquo; PREV</a>
+            </li>
             {% endif %}
-            <p class="card-title">{{article.title}}</p>
-            <p class="card-text text-start">{{article.description}}</p>
-            <a href="{% url 'detail' article.slug %}" class="btn btn-explore btn-primary">Explore</a>
-          </div>
-        </div>
-        <br>
-       {% endif %} 
-      {% endfor%}
-    </div>
-</div>
-
-{% if is_paginated %}
-<nav aria-label="Page navigation">
-    <ul class="pagination justify-content-center">
-      {% if page_obj.has_previous %}
-        <li >
-            <a href="?page={{ page_obj.previous_page_number }}"
-              class="page-link next">&laquo; PREV</a>
-        </li>
+            {% if page_obj.has_next %}
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link next"> NEXT &raquo;</a></li>
+            {% endif %}
+         </ul>
+      </nav>
       {% endif %}
-      
-      {% if page_obj.has_next %}
-           <li><a href="?page={{ page_obj.next_page_number }}" class="page-link next"> NEXT &raquo;</a></li>
-      {% endif %}
-    </ul>
-</nav>
-{% endif %}
-
-</section>
-
-
+   </section>
 </main>
 {% endblock %}

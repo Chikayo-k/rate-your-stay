@@ -69,7 +69,7 @@
                   <p>{{review.comment_date}}</p>  
                   <!-- Edit button -->
                   {% if user.is_authenticated and review.author == user %} 
-                  <div class="edit-delet-btns">
+                  <div class="edit-delete-btns">
                     <button class="btn btn-sm edit-btn"
                     data-review_id="{{ review.id }}">Edit</button>
                     <button class="btn btn-sm btn-delete"
@@ -123,7 +123,7 @@ aria-labelledby="deleteModalLabel" aria-hidden="true">
       <!-- Form -->
         <div class="review-form">
           <h2 class="review-title">Review Form</h2>
-          <p class="review-leadmessage">Let's share your holiday experience !! To share your experience, please fill out this form down below.</p>
+          <p class="review-lead-message">Let's share your holiday experience !! To share your experience, please fill out this form down below.</p>
           <form id="reviewForm" method="post">
             <p>Review as : {{ user.username }}</p>
             <div>   

@@ -26,7 +26,7 @@ body{
 }
 
 
-.lead-message .legister-btn .login-btn{
+.lead-message .register-btn .login-btn{
     display: flex;
     align-items: center;
 }
@@ -150,7 +150,7 @@ footer{
     padding-right: 3%;
 }
 
-.helpcenter{
+.help-center{
     list-style-type: none;  
 }
 
@@ -161,7 +161,7 @@ footer{
     border: none;
 }
 
-.btn-regester{
+.btn-register{
     background-color:#E03300;
     border: #E03300;
 }
@@ -382,7 +382,7 @@ footer{
     text-align: center;
 }
 
-.review-leadmessage{
+.review-lead-message{
     text-align: center;
     margin: 5% 0;
 }

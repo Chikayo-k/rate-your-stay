@@ -18,7 +18,7 @@ for(let btn of editBtns){
         let reviewContent = document.getElementById(`review${reviewId}`).innerText;
         let reviewTitleText = document.getElementById(`review${reviewId}_title`).innerText;
         let reviewRatingText = document.getElementById(`review${reviewId}_rating`).innerText;
-        message.innerHTML= "<p class='fw-bold fs-3'>Edit this meassage!</p>"
+        message.innerHTML= "<p class='fw-bold fs-3'>Edit this message!</p>"
         form.style.display="block";
         reviewText.value = reviewContent;
         reviewTitle.value= reviewTitleText;

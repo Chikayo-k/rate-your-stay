@@ -3,6 +3,7 @@
 {% load static %}
 {% load crispy_forms_tags %}
 <main id="detail">
+   <!--The content of the articles that the user clicked.-->
    <section class="detail-section">
       <div class="container detail-top">
          <div class="row">
@@ -18,6 +19,7 @@
          </div>
       </div>
    </section>
+   <!--Review sevtion-->
    <section class="review-section">
       <h2 class="review-title">Explore Reviews</h2>
       <!-- Write Review button -->
@@ -107,6 +109,7 @@
       </div>
       {% endif %}
    </section>
+   <!--Form Section-->
    {% if user.is_authenticated %}
    <section id="add-review-section" class="container-fluid form-hide">
       <!-- Form -->

@@ -2,6 +2,7 @@
 {% block content %}
 {% load static%}
 <main>
+   <!--Hero image, Lead message, Login and ragister-->
    <section id="hero-img">
       <div class="lead-message-container">
          <div class="lead-message-inner-container">
@@ -19,6 +20,7 @@
          </div>
       </div>
    </section>
+   <!--Articles-->
    <section id="articles">
       <h3 class="text-center">Holiday Reviews</h3>
       <div class="col-12 mt-3 justify-content-center justify-content-lg-start">
@@ -49,6 +51,7 @@
             {% endfor%}
          </div>
       </div>
+      <!--Pagenation-->
       {% if is_paginated %}
       <nav aria-label="Page navigation">
          <ul class="pagination justify-content-center">

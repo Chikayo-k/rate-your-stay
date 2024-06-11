@@ -30,6 +30,7 @@
    </head>
    <body>
       <header>
+         <!--Navigation bar-->
          <nav class="navbar navbar-expand-lg navbar-dark nav-colour" style="background:#222831 ;">
             <div class="container-fluid">
                <h1><a class="navbar-brand" href="{% url 'home'%}"  aria-label="Late your stay logo links to Home page">RATE YOUR STAY</a></h1>
@@ -76,9 +77,9 @@
          </div>
       </header>
       {% block content %}
-      <!-- Content Goes here -->
+      <!-- Review Contenting -->
       {% endblock content %}
-      <!-- Modal -->
+      <!-- Help Center Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -103,7 +104,7 @@
             <a href="https://www.youtube.com/" aria-label="Visit our YouTube page (opens in a new tub)" target="_blank"><i class="fa-brands fa-youtube fa-xl" style="color: #ffffff;"></i></a>
          </div>
          <div class="nav-item help-center">
-            <!-- Button trigger modal -->
+            <!-- Helpcenter button -->
             <button class="help-center btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Help Center
             </button>

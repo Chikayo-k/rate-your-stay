@@ -20,6 +20,7 @@ for(let btn of editBtns){
         let reviewRatingText = document.getElementById(`review${reviewId}_rating`).innerText;
         message.innerHTML= "<p class='fw-bold fs-3'>Edit this message!</p>"
         form.style.display="block";
+        form.scrollIntoView({ behavior:"instant"});
         reviewText.value = reviewContent;
         reviewTitle.value= reviewTitleText;
         reviewRating.value = reviewRatingText;
@@ -28,8 +29,6 @@ for(let btn of editBtns){
         writeReviewBtn.style.display="none"
     })
 }
-
-
 
 for (let button of deleteButtons) {
     button.addEventListener("click", (e) => {

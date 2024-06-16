@@ -22,7 +22,6 @@ h1 {
 /*Font style for the logo*/
 .title {
 	font-family: "Cinzel", serif;
-	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
 	font-weight: bold;
@@ -78,7 +77,7 @@ h1 {
 	color: white;
 }
 
-.logged-in-user{
+.logged-in-user {
 	font-size: 0.8em;
 	padding-top: 5%;
 }
@@ -498,19 +497,19 @@ footer {
 /* //Over 992 px// */
 @media screen and (min-width: 992px) {
 
-        /*Font size*/
-    p {
-        font-size: 1.3em;
-    }
-
-    h1 {
-        font-size: 3em;
-    }
-
-	a{
+	/*Font size*/
+	p {
 		font-size: 1.3em;
 	}
-    
+
+	h1 {
+		font-size: 3em;
+	}
+
+	a {
+		font-size: 1.3em;
+	}
+
 	#hero-img {
 		justify-content: initial;
 	}

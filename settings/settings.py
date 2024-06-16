@@ -28,7 +28,6 @@ SECRET_KEY = 'django-insecure-68iv+742*a1m03mml8xulao)$wa6%08pn2sgt@gas&)4!dibia
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
 ALLOWED_HOSTS = ['8000-chikayok-rateyourstay-2xv2w027ap3.ws.codeinstitute-ide.net','.herokuapp.com']
 
 

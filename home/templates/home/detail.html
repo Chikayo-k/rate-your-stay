@@ -33,17 +33,17 @@
          {% endif %}
       </div>
       <!-- Review -->
-      {% if reviews %} 
+      {% if reviews %}
       <div class="comment-count">
          <i class="fa-regular fa-message"> {{reviews_count}} </i>
       </div>
-      {% for review in reviews %} 
+      {% for review in reviews %}
       <div class="container review-container">
          <div class="row">
             <div class="col-12 col-sm-4 col-lg-3 review-img-container">
-               <img class="img-fluid review-img" src="{{article.detail_image.url}}" alt="Article image">  
+               <img class="img-fluid review-img" src="{{article.detail_image.url}}" alt="Article image">
             </div>
-            <div  class="col-12 col-sm-8 col-lg-9 review-details">
+            <div class="col-12 col-sm-8 col-lg-9 review-details">
                <h4 id="review{{review.id}}_title">{{review.review_title}}</h4>
                <p id="review{{review.id}}_rating" class="hide">{{review.rate}}</p>
                {% if review.rate == 0 %}
@@ -62,14 +62,12 @@
                <div id="review{{review.id}}">{{review.comment_area|linebreaks }}</div>
                <p>{{review.comment_date}}</p>
                <!-- Edit button -->
-               {% if user.is_authenticated and review.author == user %} 
+               {% if user.is_authenticated and review.author == user %}
                <div class="edit-delete-btns">
-                  <button class="btn btn-sm edit-btn"
-                     data-review_id="{{ review.id }}">Edit</button>
-                  <button class="btn btn-sm btn-delete"
-                     data-review_id="{{ review.id }}">Delete</button>
+                  <button class="btn btn-sm edit-btn" data-review_id="{{ review.id }}">Edit</button>
+                  <button class="btn btn-sm btn-delete" data-review_id="{{ review.id }}">Delete</button>
                </div>
-               {% endif %}                 
+               {% endif %}
             </div>
          </div>
       </div>
@@ -78,23 +76,19 @@
       <p class="no-review">No reviews have been posted yet</p>
       {% endif %}
       <!-- Delete confirmation modal -->
-      <div class="modal fade" id="deleteModal" tabindex="-1"
-         aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
          <div class="modal-dialog">
             <div class="modal-content">
                <div class="modal-header">
-                  <h5 class="modal-title"
-                     id="deleteModalLabel">Delete comment?</h5>
-                  <button type="button" class="btn-close"
-                     data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h5 class="modal-title" id="deleteModalLabel">Delete comment?</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                </div>
                <div class="modal-body">
                   Are you sure you want to delete your comment?
                   This action cannot be undone.
                </div>
                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary"
-                     data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                   <a id="deleteConfirm" href="#" class="btn
                      btn-danger">Delete</a>
                </div>
@@ -113,7 +107,8 @@
       <!-- Form -->
       <div class="review-form">
          <h2 class="review-title">Review Form</h2>
-         <p class="review-lead-message">Let's share your holiday experience !! To share your experience, please fill out this form down below.</p>
+         <p class="review-lead-message">Let's share your holiday experience !! To share your experience, please fill out
+            this form down below.</p>
          <form id="reviewForm" method="post">
             <p>Review as : {{ user.username }}</p>
             <div>
@@ -123,7 +118,7 @@
                {{ review_form | crispy }}
                {% csrf_token %}
             </div>
-            <button id="submitBtn"  type="submit" class="submit-btn btn btn-primary">Submit</button>
+            <button id="submitBtn" type="submit" class="submit-btn btn btn-primary">Submit</button>
             <a class="go-top btn-sm" href="{% url 'detail' article.slug %}">Quit</a>
          </form>
       </div>

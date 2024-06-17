@@ -3,6 +3,7 @@ from .models import About
 
 # Create your views here.
 
+
 def about_us(request):
     """
     Renders the About page

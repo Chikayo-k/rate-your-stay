@@ -13,8 +13,8 @@ p {
 	font-size: 1em;
 }
 
-h1 {
-	font-size: 2.5em;
+h2{
+	font-size: 1.8em;
 }
 
 /* Home page */
@@ -498,18 +498,6 @@ footer {
 @media screen and (min-width: 992px) {
 
 	/*Font size*/
-	p {
-		font-size: 1.3em;
-	}
-
-	h1 {
-		font-size: 3em;
-	}
-
-	a {
-		font-size: 1.3em;
-	}
-
 	#hero-img {
 		justify-content: initial;
 	}

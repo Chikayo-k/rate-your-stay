@@ -11,14 +11,14 @@ const deleteConfirm = document.getElementById("deleteConfirm");
 const writeReviewBtn = document.getElementsByClassName("write-review")[0];
 const form = document.getElementsByClassName('form-hide')[0];
 
-
+// Edit button
 for(let btn of editBtns){
     btn.addEventListener("click",(e)=>{
         let reviewId =  e.target.getAttribute("data-review_id");
         let reviewContent = document.getElementById(`review${reviewId}`).innerText;
         let reviewTitleText = document.getElementById(`review${reviewId}_title`).innerText;
         let reviewRatingText = document.getElementById(`review${reviewId}_rating`).innerText;
-        message.innerHTML= "<p class='fw-bold fs-3'>Edit this message!</p>"
+        message.innerHTML= "<p class='fw-bold fs-3'>Edit this message!</p>";
         form.style.display="block";
         form.scrollIntoView({ behavior:"instant"});
         reviewText.value = reviewContent;
@@ -26,10 +26,11 @@ for(let btn of editBtns){
         reviewRating.value = reviewRatingText;
         submitBtn.innerText = "Update";
         reviewForm.setAttribute("action", `edit_review/${reviewId}`);
-        writeReviewBtn.style.display="none"
+        writeReviewBtn.style.display="none";
     });
 }
 
+// Delete button
 for (let button of deleteButtons) {
     button.addEventListener("click", (e) => {
       let reviewId = e.target.getAttribute("data-review_id");
@@ -37,7 +38,6 @@ for (let button of deleteButtons) {
       deleteModal.show();
     });
   }
-
 
 /** 
  Display or hide a review form when the user is logged in

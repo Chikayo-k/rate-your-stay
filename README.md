@@ -28,3 +28,24 @@ The goal of this project is to create an interactive space where travellers from
 - As a site owner I want to offer a platform that will connect people and let them share their reviews on locations they have visited.
 - As a site owner I want to grow the site by using social media to share details.
 
+## User Experience (UX)
+
+### Project Features
+
+#### Navigation bar
+
+- The site uses a responsive navigation bar made up of four pages, these are the Home page, About Us, Register, and Login pages. It also contains a simple logo just which is the name of the website. The logo and Home can be used to navigate to the top of the home page. 
+- A user can easily access the other pages on the site and see what page they are currently on by looking at the menu in the navigation bar.
+
+![Navigation bar image](docs/images/nav.png)
+
+#### Hero Image / Login / Ragister / leadmessage
+
+- Login and register feature. Which has an image with some simple action buttons which gives the user a clear picture of the feature. The use of the image of someone relaxing gives the user an idea this is a holiday reviewing website. Users can see the lead message and understand the website at a glance.
+
+- A register button and login button above the image aim to lead users to register for an account for the website which is the website owners goal. This is to increase the active users on the website. 
+When a user is logged in, the buttons switch to show only a logout button. 
+
+![alt text](docs/images/main-img.png)
+
+

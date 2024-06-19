@@ -39,13 +39,30 @@ The goal of this project is to create an interactive space where travellers from
 
 ![Navigation bar image](docs/images/nav.png)
 
-#### Hero Image / Login / Ragister / leadmessage
+#### Hero Image / Login / Log Out / Ragister / leadmessage
 
 - Login and register feature. Which has an image with some simple action buttons which gives the user a clear picture of the feature. The use of the image of someone relaxing gives the user an idea this is a holiday reviewing website. Users can see the lead message and understand the website at a glance.
 
 - A register button and login button above the image aim to lead users to register for an account for the website which is the website owners goal. This is to increase the active users on the website. 
 When a user is logged in, the buttons switch to show only a logout button. 
 
-![alt text](docs/images/main-img.png)
+![Hero image](docs/images/main-img.png)
 
+- When a user is logged in, the register button will change to the logout button. (Navigation bar buttun will be chaged to logout as well) 
+The user can see that the user is logged in clearly.
+
+![Hrto image loggedin](docs/images/main-img-loggedin.png)
+
+#### Article review section
+
+- A user can click the explore button on any of the articles without an account to view reviews that have been left by users on each of the locations. User’s have easy access to jump to the details on the article page. 
+
+- A user can view reviews without needing to sign up or create an account. This shows the user what is available on the website. It also allows more users to access the website content if they don’t want to create an account.
+
+- Each article has an image, category, name of the place, description and the explore button.
+This gives the user a better understanding of what the article is about and allows users to create an image themself what the place is like.
+
+- The category shows users a clear understanding of what the location is famous for. The categories are Historic sites, Beaches, and Cities.
+
+![Article section image](docs/images/article-section.png)
 

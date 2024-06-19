@@ -84,9 +84,14 @@ This gives the user a better understanding of what the article is about and allo
 
 - Reviews will be displayed so that users can enjoy reading them.
 
-- Displaying the edit and the delete buttons on a review will give control only to the user who wrote the review. 
-
+- Only the user who wrote the review can see the edit and delete button to prevent someone else from editing or deleting the review.
 
 ![Review Section Image](docs/images/review-section.png)
 
+- The back to top button will be shown when there is one or more reviews at the bottom and the user has scrolled down to give the user the ease of returning to the top by the click of a button.
 
+![Back To Top button Image](docs/images/back-to-top-btn.png)
+
+#### Review form
+
+- The review form is only visible when the write button is clicked otherwise it is hidden. This will give the website a cleaner look and only show things when the user wants to see them.

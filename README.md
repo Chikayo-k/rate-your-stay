@@ -48,7 +48,7 @@ When a user is logged in, the buttons switch to show only a logout button.
 
 ![Hero image](docs/images/main-img.png)
 
-- When a user is logged in, the register button will change to the logout button. (Navigation bar buttun will be chaged to logout as well) 
+- When a user is logged in, the register button will change to the logout button. (Navigation bar buttun will be changed to logout as well) 
 The user can see that the user is logged in clearly.
 
 ![Hrto image loggedin](docs/images/main-img-loggedin.png)
@@ -65,4 +65,28 @@ This gives the user a better understanding of what the article is about and allo
 - The category shows users a clear understanding of what the location is famous for. The categories are Historic sites, Beaches, and Cities.
 
 ![Article section image](docs/images/article-section.png)
+
+#### Detail Page
+
+- When a user clicks on the explore button it will open this view.
+
+- Here users can read a short article about the location and then view the reviews that have been left by people.
+
+- Users can learn a little bit about the location and read all the reviews left by other users. This benefits users as it can help them make a decision on what kind of trip they want to take.
+
+![Detail Page Image - Top](docs/images/detail-page-top.png)
+
+#### Review Section
+
+- The write a review button only shows up when the user logged in. 
+
+- There is a counter that displays how many people left the review on each article. The counter will give users a quick understanding of how popular the article is and the number of reviews without having to scroll down through the review.
+
+- Reviews will be displayed so that users can enjoy reading them.
+
+- Displaying the edit and the delete buttons on a review will give control only to the user who wrote the review. 
+
+
+![Review Section Image](docs/images/review-section.png)
+
 

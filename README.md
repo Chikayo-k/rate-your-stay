@@ -95,3 +95,37 @@ This gives the user a better understanding of what the article is about and allo
 #### Review form
 
 - The review form is only visible when the write button is clicked otherwise it is hidden. This will give the website a cleaner look and only show things when the user wants to see them.
+
+- When a user is ready to submit a review they can click the submit button, This will send their details to be stored in the database and allow other users to view it on the website. 
+
+- There is a quit button beside the submit button which will allow users to quit their current action. This will remove everything they have entered and refresh the page so the form will disappear and nothing will be stored in the database. The submit and quit buttons make it easy for users to add their reviews to the website and to cancel a review before adding it if they want.
+
+![Form Image](docs/images/form.png)
+
+#### Edit form
+
+- This is for when a user wishes to update their review.
+
+- Users can be sure that only they can edit their reviews as this feature only shows when a user is signed. The edit form is filled out with all the info they filled in previously and they can change it from here.This user can easily update their review.
+
+- There is a quit button located beside the update button that will allow a user to quit out of an edit, remove the pop up and refresh the page.
+
+![Edit Form Image](image.png)
+
+- After updating the review, the banner shows up. The user can see the review has just been updated and was successfully done.
+
+![Comment Updated Image](docs/images/comment-updated.png)
+
+#### Delete Review
+
+- When you click the delete button of the review, the module pops up and asks if the user wants to delete the comment with a confirmation box. 
+
+![Delete Button Image](docs/images/delete-btn.png)
+
+- This option will allow users to make sure they don’t delete their review by mistake.
+
+![Delete Button Image2](docs/images/delete-btn2.png)
+
+- After clicking the delete button, the banner shows up underneath of the navbar to say the review has been deleted successfully.
+
+![Review Deleted Image](docs/images/review-deleted.png)

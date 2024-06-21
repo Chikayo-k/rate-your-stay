@@ -129,3 +129,17 @@ This gives the user a better understanding of what the article is about and allo
 - After clicking the delete button, the banner shows up underneath of the navbar to say the review has been deleted successfully.
 
 ![Review Deleted Image](docs/images/review-deleted.png)
+
+#### Register
+
+- When A user clicks the register button they will see a form to enter details to create an account. Users can set up their account with a username and personal password.
+
+- When a user creates an account they can add, edit and delete reviews.
+This page is created separately so that the user can focus on creating their account and follow the password practices of account creation.
+
+![Register image](docs/images/register.png)
+
+- After creating an account、User will see a successful banner message. The user sees that the account has been made without any issue.
+
+![Succsessfully Signed In Image](docs/images/successfully-signed-in.png)
+

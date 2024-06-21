@@ -64,6 +64,9 @@ This gives the user a better understanding of what the article is about and allo
 
 - The category shows users a clear understanding of what the location is famous for. The categories are Historic sites, Beaches, and Cities.
 
+- The site has pagination where users can see up to 4 articles at a time. When on the first page users can see the next button but no previous button, when the next button is clicked it will show the next four available articles. It will also have a previous button for users to go back. When there are no more articles left the button won't be shown.
+
+
 ![Article section image](docs/images/article-section.png)
 
 #### Detail Page
@@ -167,3 +170,23 @@ This makes sure only the user who wrote the review has control of their review. 
 
 ![Log Out Image](docs/images/logout.png)
 ![Log Out Message Image](docs/images/log-out-message.png)
+
+#### About page 
+
+- The about page shows information about the site.
+
+- Users can read the about page to find out more information about the site and what they offer.
+
+![About Page Image](docs/images/about-page.png)
+
+
+#### Footer
+
+- The footer is at the bottom of the page and has links to the help centre and social media sites.
+
+- Users can view the social media sites for Rate you Stay and follow us on those platforms if they want to learn more about us. Users can also access the help centre if they are facing any issues.
+
+![Footer Image](docs/images/footer.png)
+
+
+

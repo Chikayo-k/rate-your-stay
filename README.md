@@ -143,3 +143,27 @@ This page is created separately so that the user can focus on creating their acc
 
 ![Succsessfully Signed In Image](docs/images/successfully-signed-in.png)
 
+#### Log In 
+
+- When a user has already created an account they can sign in by clicking the login button.
+
+- When logged in the user, they can edit and delete reviews they have created.
+This makes sure only the user who wrote the review has control of their review. And users can make changes after their initial post anytime when they are logged in.
+
+
+![Log In Image](docs/images/login.png)
+
+- After logging in、the user will see a successful banner message. 
+
+![Log In Success Image](docs/images/login-success.png)
+
+#### Log Out
+
+- The user can log out using either the logout button on the navigation bar or the button on the hero image.
+
+- After clicking the logout button, another page appears asking the user to confirm they want to log out again.
+
+- User can be sure that they have logged out and that no one can see their details or post reviews pretending to be them.
+
+![Log Out Image](docs/images/logout.png)
+![Log Out Message Image](docs/images/log-out-message.png)

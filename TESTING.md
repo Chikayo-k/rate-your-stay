@@ -136,9 +136,11 @@ The errors from the register page are coming from the allauth template . As I ha
 ![Register Page HTML Validation Image](docs/test-images/registerpage-html-validation.png)
 
 
+### CSS Validation
 
+CSS validation all passed.
 
-
+![CSS Validation](docs/test-images/css-validation.png)
 
 
 

@@ -2,6 +2,26 @@
 
 This is the fourth project in the code institute diploma in full stack software development. It is a full stack website designed for travellers to visit where they can provide travel reviews for people who are thinking about travelling and also people who want to to just browse what the site has to offer. The backend of the project was built using Django, Python and a Postgres relational database to store the site's data. The project is deployed using Heroku. The project was managed using githubs built in boards so I could create Sprints to track the Epics and user stories.
 
+## Design
+
+### Colour Schemes
+
+As this is a holiday review website, I decided not to use too many colours but colours that would make the pictures stand out. Orange will be used for buttons to stand out. This will make it easier for users to navigate through the website.
+
+[Colour Hunt]( https://colorhunt.co/palette/2228312d4059ff5722eeeeee )
+
+![Colour Scheme I mage](docs/images/colour-schemes.png)
+
+### Fonts
+
+- Cinzel font type is used for the website logo 
+[Google Fonts - Cinzel](https://fonts.google.com/specimen/Cinzel)
+
+![Cinzel Image](docs/images/cinzel.png)
+
+- Roboto font style is used for the entire page 
+[Google Fonts - Roboto](https://fonts.google.com/specimen/Roboto?preview.text=Rate%20Your%20Stay&stroke=Sans+Serif )
+
 ## Project Goals
 
 ### Project Goal

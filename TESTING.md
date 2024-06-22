@@ -142,6 +142,14 @@ CSS validation all passed.
 
 ![CSS Validation](docs/test-images/css-validation.png)
 
+### JSHint
 
+JapaScript test all passed.
 
+The JSHint validator has no error.
+However, there are warnings.  
+A warning saying Function declared within loops referencing an outer scoped variable may lead to confusing semantics. I decided to ignore the warning as this was just a warning and it didn’t have any impact on the code or the project.  
 
+I used the comment out feature along with “jshint esversion: 6” to [Remove the SE6 Warning](https://teamtreehouse.com/community/why-does-jshint-give-me-these-warnings-about-es6) as these are ok to leave. 
+
+![JSHint Image](docs/test-images/js-hint.png)

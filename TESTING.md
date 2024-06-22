@@ -112,6 +112,29 @@ User Story:  As a developer, I want to tidy up the project and make sure it meet
 - [X] Project is complete.
 - [X] Readme is complete.
 
+## Validation
+
+### HTML Validation
+
+HTML validation all passed.
+
+**Home page**
+![Home Page HTML Validation Image](docs/test-images/homepage-html-validation.png)
+**Login Page**
+![Login Page HTML Validation Image](docs/test-images/loginpage-html-validation.png)
+**Logout Page**
+![Logout Page HTML Validation Image](docs/test-images/logoutpage-html-validation.png)
+**About Page**
+![About Page HTML Validation Image](docs/test-images/aboutpage-html-validation.png)
+**Detail Page**
+![Detail Page HTML Validation Image](docs/test-images/detailpage-html-validation.png)
+
+**Register Page**
+
+The errors from the register page are coming from the allauth template . As I have no control of this, I decided to leave this error.
+
+![Register Page HTML Validation Image](docs/test-images/registerpage-html-validation.png)
+
 
 
 

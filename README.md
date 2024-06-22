@@ -323,3 +323,23 @@ Sprint #4: Sprint 4
 
 **Epic #6: Project clean up**
 - User Story:  As a developer, I want to tidy up the project and make sure it meets all the requirements.
+
+##  Bugs/Improvements
+
+**Case1**
+
+When developing the path URL for admin it had been created but when it was trying to be used it did not register.  
+The error message showed a list of URL’s but it didn’t seem that the admin url was on the list.   
+Looking further it said it was a match for the last one. What happened was Django was moving down through the list and it would reach an empty path that points to home.urls this was then jumping to urls.py and going through that list.  
+To resolve it I had to rearrange how the URL’s were laid out so that the admin would be read before the empty list. This solved the issue
+
+
+**Case2**
+
+When there is no user logged in, some of the event handlers will get an error as the elements they are looking for are hidden.
+
+![alt text](docs/images/case-2-2.png)
+
+ To solve the issue, I used the try catch method to handle this type of error.
+ 
+![alt text](docs/images/case-2-1.png)

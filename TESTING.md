@@ -153,3 +153,14 @@ A warning saying Function declared within loops referencing an outer scoped vari
 I used the comment out feature along with “jshint esversion: 6” to [Remove the SE6 Warning](https://teamtreehouse.com/community/why-does-jshint-give-me-these-warnings-about-es6) as these are ok to leave. 
 
 ![JSHint Image](docs/test-images/js-hint.png)
+
+### CI Python Linter
+
+python test all passed.
+
+All Python files containing the project's codes have been tested.   
+All the errors were fixed and after running the CI Python Linter it shows there are no errors.  
+
+I didn’t include a screenshot of each one. but all other Python files were passed the test with same results.
+
+![Python Test Image](docs/test-images/python-test.png)

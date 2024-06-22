@@ -361,7 +361,7 @@ There was a warning that showed this section lacked a heading .To solve this iss
 
 **Case5**
 
-Got an attribute error by using review_id, To solve this issue I added ‘data-’ in front of ‘reveiw_id’ to make it data-review_id.
+Got an attribute error by using review_id, To solve this issue I added ‘data-’ in front of ‘review_id’ to make it data-review_id.
 
 ![Case5 Bug Image](docs/images/case-5.png
 )
@@ -370,3 +370,9 @@ Got an attribute error by using review_id, To solve this issue I added ‘data-�
 To render the data stored in the database using the Summernote format, It wasn’t necessary to use the html tag, I got a few tag errors as I was using html tags around them. Therefore I removed them and just accessed variables by using {{ }}.
 
 ![Case 6 Bug and Improvement Image](docs/images/case-6.png)
+
+**Case7**
+
+(Python Linter test)  
+There were E501 errors that the lines were too long.**  
+To solve the problem, I searched in our code institute slack channel and found that a student had found a way to solve the problem by adding # noqa at the end of the code that had the issue. 

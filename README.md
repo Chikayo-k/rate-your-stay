@@ -417,7 +417,3 @@ The project was deployed using HEROKU.
 15. Search for a repository name and connect to link up the Heroku App to the GitHub repository code.
 16. Use the Manual deploy option and click the Deploy Branch button
 17. When the App is successfully deployed, the View button will show up. The button is the deployed link.
-
-
-
-

@@ -262,3 +262,64 @@ Future features will allow all users to upload their own images to the site as p
 - Bootstrap - frontend framework
 
 
+## Agile Methodology
+
+### Overview
+
+The Rate Your Stay application was developed using the Agile methodology.  
+Using GitHub projects, I created Epics, User Stories and Milestones to track all my work.  
+
+- I used sprints and broke the work into Epics (large stories) and these were broken down into smaller user stories which were broken down more with tasks.  
+
+- The user story would be finished when all the tasks had been completed.  
+To track where work belongs I used labels.  
+
+- Labels let me link my user story and epics and this can be seen visually on the board.  
+
+- Each sprint had its board for tracking work. With three columns.
+
+- Once all tasks are finished the Sprint can be closed off.
+
+**To do** – these are tasks taken from the backlog into the sprint that has not yet been started.  
+**In Progress** – These are the current tasks I am working on.  
+**Done** – These are the tasks I have completed.  
+
+### Sprints
+
+I had 4 sprints which included all the work listed in the Epics and user Story section
+
+Sprint #1: Sprint 1  
+Sprint #2: Sprint 2  
+Sprint #3: Sprint 3  
+Sprint #4: Sprint 4  
+
+### Epics and User Stories
+
+**Epic #1: Create the initial project setup**  
+- User Story: As a Developer, I want to create the project structure so that I can - develop the Rate Your Stay website.
+
+**Epic #2: Create the landing page of the website**  
+- User Story: As a user, I want to understand what the website is at a glance  
+- User Story: As a user, I want to have easy navigation so that I can move through the pages on the site.  
+- User Story: As a user, I want to browse the footer of the webpage so that I can see what’s there.  
+- User Story: As a user, I want to be able to access the website on any device so that I can view the content.  
+- User Story: As a user, I want to see if the website has social media so that I can visit them.
+
+**Epic #3: Populate database and homepage with articles**
+- User Story:  As a user, I want to be able to pick and view articles that interest me so I can plan a trip.
+- User Story: As a user, I want to be able to see images of the places I want to view so that I can get a picture of what they are like.
+- User Story: As site owner, I want to be able to see proper styling through the website, so that it is consistent.
+- User Story: As a user, I want a more readable layout so I am not overwhelmed with information.
+
+**Epic #4: Create Details and about us pages**
+- User Story: As a user, I want to see the Details page clearly so that it is easy to find information.
+- User Story: As a user, I want to add reviews so that people can see them
+- User Story: As a user, I want to see the About pages so that I can learn more about the website.
+
+**Epic #5: Authentication**
+- User Story: As a user, I want to be able to login and logout of the website so I can add reviews.
+- User Story: As a user, I want to be able to create an account so I can have access to account-specific views
+- User Story: As a user, I want to have control over my reviews so that I can update and delete them.
+
+**Epic #6: Project clean up**
+- User Story:  As a developer, I want to tidy up the project and make sure it meets all the requirements.

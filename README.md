@@ -338,8 +338,35 @@ To resolve it I had to rearrange how the URL’s were laid out so that the admin
 
 When there is no user logged in, some of the event handlers will get an error as the elements they are looking for are hidden.
 
-![alt text](docs/images/case-2-2.png)
+![Bug Case2 Image](docs/images/case-2-2.png)
 
  To solve the issue, I used the try catch method to handle this type of error.
- 
-![alt text](docs/images/case-2-1.png)
+
+![Bug Case2 Improvement Image](docs/images/case-2-1.png)
+
+**Case3**
+
+When running the Lightning house validations it showed that the background colour of the button didn’t have enough contrast 
+
+![Bug Case3 Image](docs/images/case-3-1.png)
+
+It was adjusted and the lightness increased to pass the contrast ratio validation.
+
+![Bug Case3 Improvement Image](docs/images/case-3-2.png)
+
+**Case4**
+
+There was a warning that showed this section lacked a heading .To solve this issue, I added the h3 tag " Holiday Reviews" as the title of the section.
+![Bug Case4 Image](docs/images/case-4.png)
+
+**Case5**
+
+Got an attribute error by using review_id, To solve this issue I added ‘data-’ in front of ‘reveiw_id’ to make it data-review_id.
+
+![Case5 Bug Image](docs/images/case-5.png
+)
+**Case6**
+
+To render the data stored in the database using the Summernote format, It wasn’t necessary to use the html tag, I got a few tag errors as I was using html tags around them. Therefore I removed them and just accessed variables by using {{ }}.
+
+![Case 6 Bug and Improvement Image](docs/images/case-6.png)

@@ -324,6 +324,9 @@ Sprint #4: Sprint 4
 **Epic #6: Project clean up**
 - User Story:  As a developer, I want to tidy up the project and make sure it meets all the requirements.
 
+## Testing
+For Testing details go to a separated file [TESTING.md](TESTING.md)
+
 ##  Bugs/Improvements
 
 **Case1**
@@ -414,6 +417,7 @@ The project was deployed using HEROKU.
 15. Search for a repository name and connect to link up the Heroku App to the GitHub repository code.
 16. Use the Manual deploy option and click the Deploy Branch button
 17. When the App is successfully deployed, the View button will show up. The button is the deployed link.
+
 
 
 

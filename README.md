@@ -246,6 +246,9 @@ Future features will allow all users to upload their own images to the site as p
 
 ![Database Model Image](docs/images/database-model.png)
 
+### Flow Diagram
+![Flow Diagram Image](docs/images/diagram.png)
+
 ### Technologies used
 
 **Main technologies used:**

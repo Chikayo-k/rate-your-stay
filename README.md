@@ -376,3 +376,44 @@ To render the data stored in the database using the Summernote format, It wasnâ€
 (Python Linter test)  
 There were E501 errors that the lines were too long.**  
 To solve the problem, I searched in our code institute slack channel and found that a student had found a way to solve the problem by adding # noqa at the end of the code that had the issue. 
+
+## Deployment
+
+#### Clone
+
+1. Clicking on the code dropdown in the main repository.
+2. Copying the SSH URL
+3. I opened my git bash terminal and cloned the project to a folder on my desktop.
+
+#### Fork
+
+A Git fork is when an existing repository has a copy taken of it and it becomes its new repository no longer being attached to or tracking the commits of the original repository. I used the original project I had cloned at the start. I could not fork the project the repository as I am the owner but the steps to fork are
+
+1. Open the repository on GitHub and select the Fork dropdown
+2. Click fork you will have a full copy of the repository.
+
+#### Heroku
+
+The code is stored on GitHub.  
+The project was deployed using HEROKU.
+
+1. Create requirements for deployment on the project file
+2. Create a Heroku account and set it up if needed
+3. Click the Create New App button
+4. Name the App and select a region then click Create App
+5. Click the settings tab and create the Config Vars.
+6. Config vars should include CLOUDINARY_URL and DATABASE_URL 
+7. Install a production-ready web server for Heroku
+8. Add requirements.txt file
+9. Create a Procfile file in the project and execute to the Django project.
+10. Set setting.py where it is necessary.
+11. Add buildpack select node.js and save changes.
+12. Go back to the deploy section
+13. Choose the deployment method for GitHub
+14. Click the Connect to GitHub button
+15. Search for a repository name and connect to link up the Heroku App to the GitHub repository code.
+16. Use the Manual deploy option and click the Deploy Branch button
+17. When the App is successfully deployed, the View button will show up. The button is the deployed link.
+
+
+

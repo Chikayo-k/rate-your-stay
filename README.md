@@ -166,7 +166,10 @@ This makes sure only the user who wrote the review has control of their review. 
 
 - After clicking the logout button, another page appears asking the user to confirm they want to log out again.
 
-- User can be sure that they have logged out and that no one can see their details or post reviews pretending to be them.
+- When a user is logged out they can view their reviews on the site like all other reviews.
+
+- This provides clear navigation for the user to logout.
+
 
 ![Log Out Image](docs/images/logout.png)
 ![Log Out Message Image](docs/images/log-out-message.png)
@@ -187,6 +190,16 @@ This makes sure only the user who wrote the review has control of their review. 
 - Users can view the social media sites for Rate you Stay and follow us on those platforms if they want to learn more about us. Users can also access the help centre if they are facing any issues.
 
 ![Footer Image](docs/images/footer.png)
+
+
+#### Help Center
+
+- This is to support users if they face any trouble on the site.
+
+- Users can click this and a module will pop up where users can get an email address where they can contact us for any issues they may have and they can get support.
+
+
+![Help Center Image](docs/images/help-center.png)
 
 
 

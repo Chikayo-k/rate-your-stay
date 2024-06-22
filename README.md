@@ -207,3 +207,18 @@ This makes sure only the user who wrote the review has control of their review. 
 Future features will allow all users to upload their own images to the site as part of their reviews. There will also be a My page added which will have all the users reviews in a single page and give them more control over their content. The admin will also have the ability to review all of a user’s reviews.
 
 
+## Project Structure:
+
+**The project will be made up of six pages consisting of:**
+
+- The landing page, the first page a user will see after logging in will display a selection of reviews and articles.
+
+- Detail page, this will show a selection of reviews from the various categories available. For example, reviews based on beaches/cities or historic sites.
+
+- Create a review page, Users can create reviews on articles where they can share their  experiences with other travellers and people planning to travel. 
+- About Us page, details on the site.
+
+- Login and register page, The user can log in or create an account.
+
+- Logout page This will close all current user actions and display a logout message.
+

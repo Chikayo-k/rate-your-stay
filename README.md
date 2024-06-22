@@ -222,3 +222,7 @@ Future features will allow all users to upload their own images to the site as p
 
 - Logout page This will close all current user actions and display a logout message.
 
+### Database Model
+
+![Database Model Image](docs/images/database-model.png)
+

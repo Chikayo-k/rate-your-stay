@@ -226,3 +226,19 @@ Future features will allow all users to upload their own images to the site as p
 
 ![Database Model Image](docs/images/database-model.png)
 
+### Technologies used
+
+**Main technologies used:**
+
+- HTML - used to create the basic design of the website
+- CSS - used to create the style of the webpages
+- JavaScript - used to add client side features
+- Python - used to build this project of backend
+- Django - Main framework of  this project 
+- Postgres - used as the projects database
+- Heroku - Used to deploy the project
+- Gitpod - used to develop the project
+- GitHub - used to track the project progress
+- Bootstrap - frontend framework
+
+

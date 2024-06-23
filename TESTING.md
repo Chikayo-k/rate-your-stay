@@ -164,3 +164,18 @@ All the errors were fixed and after running the CI Python Linter it shows there 
 I didn’t include a screenshot of each one. but all other Python files were passed the test with same results.
 
 ![Python Test Image](docs/test-images/python-test.png)
+
+## Manual Test
+
+### Navigation bar
+![Navigation Bar GIF Image](docs/test-gif/navigationbar.gif)
+
+### Login and Register Buttons on the Hero Image
+![Login and Register Buttons on the Hero Image](docs/test-gif/hero-login-register-btn.gif)
+
+### Pagenation
+![Pagenation Image](docs/test-gif/pagenation.gif)
+
+### Explore Button
+![Explore Button](docs/test-gif/explore-btn.gif)
+

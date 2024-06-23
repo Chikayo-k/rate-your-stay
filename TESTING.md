@@ -200,3 +200,9 @@ I didn’t include a screenshot of each one. but all other Python files were pas
 ### Register 
 ![Register Image](docs/test-gif/register.gif)
 
+### Help Center
+![Help Center Image](docs/test-gif/help-center.gif)
+
+### Social Media Icons
+![Social Media Icons Image](docs/test-gif/social-media-icons.gif)
+

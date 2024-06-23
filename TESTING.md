@@ -177,5 +177,26 @@ I didn’t include a screenshot of each one. but all other Python files were pas
 ![Pagenation Image](docs/test-gif/pagenation.gif)
 
 ### Explore Button
-![Explore Button](docs/test-gif/explore-btn.gif)
+![Explore Button Image](docs/test-gif/explore-btn.gif)
+
+### Write Review Button
+![Write Review Button Image](docs/test-gif/write-review-btn.gif)
+
+### Write Review
+![Write review Image](docs/test-gif/write-review.gif)
+
+### Edit Review
+![Edit Review Image](docs/test-gif/edit.gif)
+
+### Delete Review
+![Delete Review Image](docs/test-gif/delete.gif)
+
+### About Page
+![About Page Image](docs/test-gif/about-page.gif)
+
+### Login Logout 
+![Login Logout Image](docs/test-gif/login-logout.gif)
+
+### Register 
+![Register Image](docs/test-gif/register.gif)
 

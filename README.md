@@ -420,3 +420,31 @@ The project was deployed using HEROKU.
 15. Search for a repository name and connect to link up the Heroku App to the GitHub repository code.
 16. Use the Manual deploy option and click the Deploy Branch button
 17. When the App is successfully deployed, the View button will show up. The button is the deployed link.
+
+## Reference
+
+Code
+
+I used Code Institute study materials and the Math walkthrough project in coming up with the idea for my project. I used w3schools and Django documentation to check how to write code as well as the different types of methods that were available for this project.   
+When I ran into an issue, I used Code Institute's tutor assistance and received great help.
+
+
+-  [How to retrieve multiple modal](https://qiita.com/yongjugithub/items/edd69e1ac6d4507f9ad1)
+- [QuickDatabaseDiagrams](https://www.quickdatabasediagrams.com/)
+- [Django W3 school](https://www.w3schools.com/django/)
+- [Django Documentation](https://docs.djangoproject.com/en/5.0/)
+
+
+Images
+
+- [Pixabay](https://pixabay.com/images/search/holiday/)
+- [Pexels](https://pixabay.com/images/search/holiday/)
+
+Test
+
+- [W3C Markup Validation Service](https://validator.w3.org/)
+- [W3C CSS Validation Servervice](https://jigsaw.w3.org/css-validator/)
+- [JSHint](https://jshint.com/)
+- [Code Institute CI Python Linter](https://pep8ci.herokuapp.com/)
+
+

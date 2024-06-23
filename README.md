@@ -133,7 +133,7 @@ This gives the user a better understanding of what the article is about and allo
 
 - There is a quit button located beside the update button that will allow a user to quit out of an edit, remove the pop up and refresh the page.
 
-![Edit Form Image](image.png)
+![Edit Form Image](docs/images/edit-form.png)
 
 - After updating the review, the banner shows up. The user can see the review has just been updated and was successfully done.
 

@@ -47,11 +47,6 @@ function userLoggedIn(){
 writeReviewBtn.addEventListener("click",() =>{
   form.style.display="block";
 });
-
-//Hide a review form
-submitBtn.addEventListener("click",() =>{
-  form.style.display="none";
-});
 }
 
 //Error handling when there is no user logged in

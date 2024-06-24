@@ -168,21 +168,27 @@ I didn’t include a screenshot of each one. but all other Python files were pas
 ## Lighthouse Test
 
 **Home**
+
 ![Lighthouse Report Home Image](docs/test-images/home-lighthouse.png)
 
 **Detail Page**
+
 ![Lighthouse Report Detail Page Image](docs/test-images/detail-lighthouse.png)
 
 **About Page**
+
 ![Lighthouse Report About Page Image](docs/test-images/about-lighthouse.png)
 
 **Register Page**
+
 ![Lighthouse Report Register Page Image](docs/test-images/register-lighthouse.png)
 
 **Login Page**
+
 ![Lighthouse Report Login Page Image](docs/test-images/login-lighthouse.png)
 
 **logout Page**
+
 ![Lighthouse Report Login Page Image](docs/test-images/logout-lighthouse.png)
 
 ## Manual Test

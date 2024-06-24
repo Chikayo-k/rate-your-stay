@@ -3,7 +3,7 @@
 This is the Testing section of the [README.md](README.md) file.  
 It  contains all the testing information for the project Rate Your Stay.
 
-- ### Testing User stories
+## Testing User stories
 
 User Story: As a Developer, I want to create the project structure so that I can develop the Rate Your Stay website.
 
@@ -168,41 +168,80 @@ I didn’t include a screenshot of each one. but all other Python files were pas
 ## Manual Test
 
 ### Navigation bar
+
+**Pass:**  Works as expected 
+
 ![Navigation Bar GIF Image](docs/test-gif/navigationbar.gif)
 
 ### Login and Register Buttons on the Hero Image
+
+**Pass:**  Works as expected 
+
 ![Login and Register Buttons on the Hero Image](docs/test-gif/hero-login-register-btn.gif)
 
-### Pagenation
-![Pagenation Image](docs/test-gif/pagenation.gif)
+### Pagination
+
+**Pass:**  Works as expected 
+
+![Pagination Image](docs/test-gif/pagination.gif)
 
 ### Explore Button
+
+**Pass:**  Works as expected 
+
 ![Explore Button Image](docs/test-gif/explore-btn.gif)
 
 ### Write Review Button
+
+**Pass:**  Works as expected 
+
 ![Write Review Button Image](docs/test-gif/write-review-btn.gif)
 
 ### Write Review
+
+**Pass:**  Works as expected 
+
 ![Write review Image](docs/test-gif/write-review.gif)
 
 ### Edit Review
+
+**Pass:**  Works as expected 
+
 ![Edit Review Image](docs/test-gif/edit.gif)
 
 ### Delete Review
+
+**Pass:**  Works as expected 
+
 ![Delete Review Image](docs/test-gif/delete.gif)
 
 ### About Page
+
+**Pass:**  Works as expected 
+
 ![About Page Image](docs/test-gif/about-page.gif)
 
 ### Login Logout 
+
+**Pass:**  Works as expected 
+
 ![Login Logout Image](docs/test-gif/login-logout.gif)
 
 ### Register 
+
+**Pass:**  Works as expected 
+
 ![Register Image](docs/test-gif/register.gif)
 
 ### Help Center
+
+**Pass:**  Works as expected 
+
 ![Help Center Image](docs/test-gif/help-center.gif)
 
 ### Social Media Icons
+
+**Pass:**  Works as expected 
+
 ![Social Media Icons Image](docs/test-gif/social-media-icons.gif)
 

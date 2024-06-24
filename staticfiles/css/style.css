@@ -352,12 +352,28 @@ footer {
 
 .review-container {
 	margin-bottom: 5%;
+	padding: 0;
 }
 
 .review-details {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+}
+
+.review-img-container{
+	width:100% ;
+	margin: 0 ;
+}
+
+.review-img-div{
+	display: flex;
+	justify-content:flex-start;
+	padding: 0;
+}
+
+.review-title1{
+	padding-top: 5%;
 }
 
 .no-review {
@@ -490,6 +506,11 @@ footer {
 	.review-btns {
 		margin: 3% 0;
 	}
+
+	.review-title1{
+		padding-top: 1%;
+	}
+	
 
 }
 

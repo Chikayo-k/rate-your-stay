@@ -39,12 +39,12 @@
       </div>
       {% for review in reviews %}
       <div class="container review-container">
-         <div class="row">
-            <div class="col-12 col-sm-4 col-lg-3 review-img-container">
+         <div class="row review-img-container">
+            <div class="col-12 col-sm-4 col-lg-3 review-img-div">
                <img class="img-fluid review-img" src="{{article.detail_image.url}}" alt="Article image">
             </div>
             <div class="col-12 col-sm-8 col-lg-9 review-details">
-               <h4 id="review{{review.id}}_title">{{review.review_title}}</h4>
+               <h4 id="review{{review.id}}_title" class="review-title1">{{review.review_title}}</h4>
                <p id="review{{review.id}}_rating" class="hide">{{review.rate}}</p>
                {% if review.rate == 0 %}
                <p>★</p>

@@ -22,6 +22,9 @@ As this is a holiday review website, I decided not to use too many colours but c
 - Roboto font style is used for the entire page 
 [Google Fonts - Roboto](https://fonts.google.com/specimen/Roboto?preview.text=Rate%20Your%20Stay&stroke=Sans+Serif )
 
+### favicon
+![Icon Image](docs/images/icon.png)
+
 ## Project Goals
 
 ### Project Goal

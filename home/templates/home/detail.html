@@ -47,7 +47,7 @@
                <h4 id="review{{review.id}}_title">{{review.review_title}}</h4>
                <p id="review{{review.id}}_rating" class="hide">{{review.rate}}</p>
                {% if review.rate == 0 %}
-               <p>No Reviews</p>
+               <p>★</p>
                {% elif review.rate == 1 %}
                <p>★</p>
                {% elif review.rate == 2 %}
@@ -56,8 +56,6 @@
                <p>★★★</p>
                {% elif review.rate == 4 %}
                <p>★★★★</p>
-               {% elif review.rate == 5 %}
-               <p>★★★★★</p>
                {% endif %}
                <div id="review{{review.id}}">{{review.comment_area|linebreaks }}</div>
                <p>{{review.comment_date}}</p>

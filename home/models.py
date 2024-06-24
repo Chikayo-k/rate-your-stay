@@ -9,7 +9,7 @@ import cloudinary.api
 
 CATEGORY_CHOICES = (0, "Beach"), (1, "History"), (2, "City")
 STATUS = (0, "Draft"), (1, "Published")
-RATE = (0, "Rate your stay"), (1, "★"), (2, "★★"), (3, "★★★"), (4, "★★★★"), (5, "★★★★★")  # noqa
+RATE = (0, "★ - Change the rating (Currently one star is chosen)"), (1, "★★"), (2, "★★★"), (3, "★★★★"), (4, "★★★★★")  # noqa
 
 
 class Article(models.Model):

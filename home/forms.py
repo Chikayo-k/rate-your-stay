@@ -7,4 +7,3 @@ class ReviewForm(forms.ModelForm):
     class Meta:
         model = Reviews
         fields = ['review_title', 'rate', 'comment_area']
-

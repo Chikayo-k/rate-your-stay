@@ -383,8 +383,20 @@ To render the data stored in the database using the Summernote format, It wasnâ€
 **Case7**
 
 (Python Linter test)  
-There were E501 errors that the lines were too long.**  
+There were E501 errors that the lines were too long.
 To solve the problem, I searched in our code institute slack channel and found that a student had found a way to solve the problem by adding # noqa at the end of the code that had the issue. 
+
+**Case8**
+
+There were Mixed content warnings.
+
+![Mixed Content Warning Image](docs/images/mixed-content-warning.png)
+
+To solve this issue, I added a meta tag in the head section in the head section.
+[Reference](https://web.dev/articles/fixing-mixed-content#fixing_mixed_content)
+
+![Mixed Content Warning - Solved Image](docs/images/mixed-content-warning2.png)
+
 
 ## Deployment
 
@@ -432,10 +444,11 @@ I used Code Institute study materials and the Math walkthrough project in coming
 When I ran into an issue, I used Code Institute's tutor assistance and received great help.
 
 
--  [How to retrieve multiple modal](https://qiita.com/yongjugithub/items/edd69e1ac6d4507f9ad1)
+- [How to retrieve multiple modal](https://qiita.com/yongjugithub/items/edd69e1ac6d4507f9ad1)
 - [QuickDatabaseDiagrams](https://www.quickdatabasediagrams.com/)
 - [Django W3 school](https://www.w3schools.com/django/)
 - [Django Documentation](https://docs.djangoproject.com/en/5.0/)
+- [Mixed Content Issue](https://web.dev/articles/fixing-mixed-content#fixing_mixed_content)
 
 
 Images

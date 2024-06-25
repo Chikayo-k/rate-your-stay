@@ -241,6 +241,12 @@ I didn’t include a screenshot of each one. but all other Python files were pas
 
 ![Delete Review Image](docs/test-gif/delete.gif)
 
+### Quit Review Button
+
+**Pass:**  Works as expected 
+
+![Quit Review button](docs/test-gif/quit-btn.gif)
+
 ### About Page
 
 **Pass:**  Works as expected 
@@ -258,6 +264,10 @@ I didn’t include a screenshot of each one. but all other Python files were pas
 **Pass:**  Works as expected 
 
 ![Register Image](docs/test-gif/register.gif)
+
+### Back to Top
+
+**Pass:**  Works as expected 
 
 ### Help Center
 

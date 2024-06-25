@@ -17,12 +17,14 @@ class ArticleList(generic.ListView):
 
 
 def detail(request, slug):
-
+    """
+    Display an individual article
+    """
     queryset = Article.objects.all()
     detail = get_object_or_404(queryset, slug=slug)
     reviews = detail.chosen_article.all().order_by("-comment_date")
     reviews_count = detail.chosen_article.count()
-
+    # Write Review Submission
     if request.method == "POST":
         review_form = ReviewForm(data=request.POST)
         if review_form.is_valid():
@@ -49,7 +51,9 @@ def detail(request, slug):
 
 
 def review_edit(request, slug, review_id):
-
+    """
+    view to edit review
+    """
     if request.method == "POST":
 
         queryset = Article.objects.filter(status=1)
@@ -70,7 +74,9 @@ def review_edit(request, slug, review_id):
 
 
 def review_delete(request, slug, review_id):
-
+    """
+    view to delete review
+    """
     queryset = Article.objects.filter(status=1)
     article = get_object_or_404(queryset, slug=slug)
     review = get_object_or_404(Reviews, pk=review_id)

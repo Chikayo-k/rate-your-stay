@@ -269,6 +269,8 @@ I didn’t include a screenshot of each one. but all other Python files were pas
 
 **Pass:**  Works as expected 
 
+![Back to Top Button Image](docs/test-gif/back-to-top.gif)
+
 ### Help Center
 
 **Pass:**  Works as expected 

@@ -135,7 +135,7 @@ This gives the user a better understanding of what the article is about and allo
 
 - This is for when a user wishes to update their review.
 
-- Users can be sure that only they can edit their reviews as this feature only shows when a user is signed. The edit form is filled out with all the info they filled in previously and they can change it from here.This user can easily update their review.
+- Users can be sure that only they can edit their reviews as this feature only shows when a user is signed in. The edit form is filled out with all the info they filled in previously and they can change it from here. User can easily update their review.
 
 - There is a quit button located beside the update button that will allow a user to quit out of an edit, remove the pop up and refresh the page.
 
@@ -176,7 +176,7 @@ This page is created separately so that the user can focus on creating their acc
 
 - When a user has already created an account they can sign in by clicking the login button.
 
-- When logged in the user, they can edit and delete reviews they have created.
+- When the user is logged in, they can edit and delete reviews they have created.
 This makes sure only the user who wrote the review has control of their review. And users can make changes after their initial post anytime when they are logged in.
 
 
@@ -192,7 +192,7 @@ This makes sure only the user who wrote the review has control of their review. 
 
 - After clicking the logout button, another page appears asking the user to confirm they want to log out again.
 
-- When a user is logged out they can view their reviews on the site like all other reviews.
+- When a user is logged out they can view their reviews on the site like all other users.
 
 - This provides clear navigation for the user to logout.
 
@@ -228,7 +228,7 @@ This makes sure only the user who wrote the review has control of their review. 
 ![Help Center Image](docs/images/help-center.png)
 
 
-### Features for future
+### Future Features
 
 Future features will allow all users to upload their own images to the site as part of their reviews. There will also be a My page added which will have all the users reviews in a single page and give them more control over their content. The admin will also have the ability to review all of a user’s reviews.
 
@@ -237,7 +237,7 @@ Future features will allow all users to upload their own images to the site as p
 
 **The project will be made up of six pages consisting of:**
 
-- The landing page, the first page a user will see after logging in will display a selection of reviews and articles.
+- The landing page, the first page a user will see after logging in, will display a selection of reviews and articles.
 
 - Detail page, this will show a selection of reviews from the various categories available. For example, reviews based on beaches/cities or historic sites.
 
@@ -246,7 +246,7 @@ Future features will allow all users to upload their own images to the site as p
 
 - Login and register page, The user can log in or create an account.
 
-- Logout page This will close all current user actions and display a logout message.
+- Logout page, This will close all current user actions and display a logout message.
 
 ### Database Model
 
@@ -259,16 +259,16 @@ Future features will allow all users to upload their own images to the site as p
 
 **Main technologies used:**
 
-- HTML - used to create the basic design of the website
-- CSS - used to create the style of the webpages
-- JavaScript - used to add client side features
-- Python - used to build this project of backend
+- HTML - Used to create the basic design of the website
+- CSS - Used to create the style of the webpages
+- JavaScript - Used to add client side features
+- Python - Used to build this project of backend
 - Django - Main framework of  this project 
-- Postgres - used as the projects database
+- Postgres - Used as the projects database
 - Heroku - Used to deploy the project
-- Gitpod - used to develop the project
-- GitHub - used to track the project progress
-- Bootstrap - frontend framework
+- Gitpod - Used to develop the project
+- GitHub - Used to track the project progress
+- Bootstrap - Frontend framework
 
 
 ## Agile Methodology

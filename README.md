@@ -300,7 +300,7 @@ Future features will allow all users to upload their own images to the site as p
 The Rate Your Stay application was developed using the Agile methodology.  
 Using GitHub projects, I created Epics, User Stories and Milestones to track all my work.  
 
-- I used sprints and broke the work into Epics (large stories) and these were broken down into smaller user stories which were broken down more with tasks.  
+- I used Sprints and broke the work into Epics (large stories) and these were broken down into smaller user stories which were broken down more with tasks.  
 
 - The user story would be finished when all the tasks had been completed.  
 To track where work belongs I used labels.  
@@ -317,7 +317,7 @@ To track where work belongs I used labels.
 
 ### Sprints
 
-I had 4 sprints which included all the work listed in the Epics and user Story section
+I had 4 sprints which included all the work listed in the Epics and user Story section.
 
 Sprint #1: Sprint 1  
 Sprint #2: Sprint 2  
@@ -330,7 +330,7 @@ Sprint #4: Sprint 4
 - User Story: As a Developer, I want to create the project structure so that I can - develop the Rate Your Stay website.
 
 **Epic #2: Create the landing page of the website**  
-- User Story: As a user, I want to understand what the website is at a glance  
+- User Story: As a user, I want to understand what the website is at a glance.  
 - User Story: As a user, I want to have easy navigation so that I can move through the pages on the site.  
 - User Story: As a user, I want to browse the footer of the webpage so that I can see what’s there.  
 - User Story: As a user, I want to be able to access the website on any device so that I can view the content.  
@@ -344,31 +344,31 @@ Sprint #4: Sprint 4
 
 **Epic #4: Create Details and about us pages**
 - User Story: As a user, I want to see the Details page clearly so that it is easy to find information.
-- User Story: As a user, I want to add reviews so that people can see them
+- User Story: As a user, I want to add reviews so that people can see them.
 - User Story: As a user, I want to see the About pages so that I can learn more about the website.
 
 **Epic #5: Authentication**
 - User Story: As a user, I want to be able to login and logout of the website so I can add reviews.
-- User Story: As a user, I want to be able to create an account so I can have access to account-specific views
+- User Story: As a user, I want to be able to create an account so I can have access to account-specific views.
 - User Story: As a user, I want to have control over my reviews so that I can update and delete them.
 
 **Epic #6: Project clean up**
 - User Story:  As a developer, I want to tidy up the project and make sure it meets all the requirements.
 
 ## Testing
-For Testing details go to a separated file [TESTING.md](TESTING.md)
+For Testing details go to a separated file. [TESTING.md](TESTING.md)
 
 ##  Bugs/Improvements
 
-**Case1**
+**Case 1**
 
-When developing the path URL for admin it had been created but when it was trying to be used it did not register.  
+When developing the path URL for the admin functionality it was created but when it was used it did not register.  
 The error message showed a list of URL’s but it didn’t seem that the admin url was on the list.   
 Looking further it said it was a match for the last one. What happened was Django was moving down through the list and it would reach an empty path that points to home.urls this was then jumping to urls.py and going through that list.  
-To resolve it I had to rearrange how the URL’s were laid out so that the admin would be read before the empty list. This solved the issue
+To resolve this issue, I had to rearrange how the URL’s were laid out so that the admin would be read before the empty list. This solved the issue.
 
 
-**Case2**
+**Case 2**
 
 When there is no user logged in, some of the event handlers will get an error as the elements they are looking for are hidden.
 
@@ -378,46 +378,46 @@ When there is no user logged in, some of the event handlers will get an error as
 
 ![Bug Case2 Improvement Image](docs/images/case-2-1.png)
 
-**Case3**
+**Case 3**
 
-When running the Lightning house validations it showed that the background colour of the button didn’t have enough contrast 
+When running the Lightning house validations it showed that the background colour of the button didn’t have enough contrast. 
 
 ![Bug Case3 Image](docs/images/case-3-1.png)
 
-It was adjusted and the lightness increased to pass the contrast ratio validation.
+It was adjusted and the lightness was increased to pass the contrast ratio validation.
 
 ![Bug Case3 Improvement Image](docs/images/case-3-2.png)
 
-**Case4**
+**Case 4**
 
-There was a warning that showed this section lacked a heading .To solve this issue, I added the h3 tag " Holiday Reviews" as the title of the section.
+There was a warning that showed this section lacked a heading.To solve this issue, I added the h3 tag "Holiday Reviews" as the title of the section.
 ![Bug Case4 Image](docs/images/case-4.png)
 
-**Case5**
+**Case 5**
 
-Got an attribute error by using review_id, To solve this issue I added ‘data-’ in front of ‘review_id’ to make it data-review_id.
+There was an attribute error by using review_id, To solve this issue I added ‘data-’ in front of ‘review_id’ to make it data-review_id.
 
-![Case5 Bug Image](docs/images/case-5.png
-)
-**Case6**
+![Case5 Bug Image](docs/images/case-5.png)
 
-To render the data stored in the database using the Summernote format, It wasn’t necessary to use the html tag, I got a few tag errors as I was using html tags around them. Therefore I removed them and just accessed variables by using {{ }}.
+**Case 6**
+
+To render the data stored in the database using the Summernote format, It wasn’t necessary to use the html tag, I got a few tag errors as I was using the html tags around them. Therefore I removed them and just accessed variables by using {{ }}.
 
 ![Case 6 Bug and Improvement Image](docs/images/case-6.png)
 
-**Case7**
+**Case 7**
 
 (Python Linter test)  
 There were E501 errors that the lines were too long.
-To solve the problem, I searched in our code institute slack channel and found that a student had found a way to solve the problem by adding # noqa at the end of the code that had the issue. 
+To solve this issue, I searched through the code institute slack channel and found that a student had found a way to solve the problem by adding # noqa at the end of the code that had the issue. 
 
-**Case8**
+**Case 8**
 
 There were Mixed content warnings.
 
 ![Mixed Content Warning Image](docs/images/mixed-content-warning.png)
 
-To solve this issue, I added a meta tag in the head section in the head section.
+To solve this issue, I added a meta tag in the head section.
 [Reference](https://web.dev/articles/fixing-mixed-content#fixing_mixed_content)
 
 ![Mixed Content Warning - Solved Image](docs/images/mixed-content-warning2.png)
@@ -443,35 +443,35 @@ A Git fork is when an existing repository has a copy taken of it and it becomes 
 The code is stored on GitHub.  
 The project was deployed using HEROKU.
 
-1. Create requirements for deployment on the project file
-2. Create a Heroku account and set it up if needed
-3. Click the Create New App button
-4. Name the App and select a region then click Create App
+1. Create requirements for deployment on the project file.
+2. Create a Heroku account and set it up if needed.
+3. Click the Create New App button.
+4. Name the App and select a region then click Create App.
 5. Click the settings tab and create the Config Vars.
-6. Config vars should include CLOUDINARY_URL and DATABASE_URL 
-7. Install a production-ready web server for Heroku
-8. Add requirements.txt file
+6. Config vars should include CLOUDINARY_URL and DATABASE_URL.
+7. Install a production-ready web server for Heroku.
+8. Add requirements.txt file.
 9. Create a Procfile file in the project and execute to the Django project.
 10. Set setting.py where it is necessary.
 11. Add buildpack select node.js and save changes.
-12. Go back to the deploy section
-13. Choose the deployment method for GitHub
-14. Click the Connect to GitHub button
+12. Go back to the deploy section.
+13. Choose the deployment method for GitHub.
+14. Click the Connect to GitHub button.
 15. Search for a repository name and connect to link up the Heroku App to the GitHub repository code.
-16. Use the Manual deploy option and click the Deploy Branch button
+16. Use the Manual deploy option and click the Deploy Branch button.
 17. When the App is successfully deployed, the View button will show up. The button is the deployed link.
 
 ## Reference
 
 Code
 
-I used Code Institute study materials and the Math walkthrough project in coming up with the idea for my project. I used w3schools and Django documentation to check how to write code as well as the different types of methods that were available for this project.   
+I used Code Institute study materials and the walkthrough project in coming up with the idea for my project. I used w3schools and Django documentation to check how to write code as well as the different types of methods that were available for this project.   
 When I ran into an issue, I used Code Institute's tutor assistance and received great help.
 
 
 - [How to retrieve multiple modal](https://qiita.com/yongjugithub/items/edd69e1ac6d4507f9ad1)
 - [QuickDatabaseDiagrams](https://www.quickdatabasediagrams.com/)
-- [Django W3 school](https://www.w3schools.com/django/)
+- [Django W3school](https://www.w3schools.com/django/)
 - [Django Documentation](https://docs.djangoproject.com/en/5.0/)
 - [Mixed Content Issue](https://web.dev/articles/fixing-mixed-content#fixing_mixed_content)
 

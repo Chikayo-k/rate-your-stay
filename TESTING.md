@@ -11,11 +11,11 @@ User Story: As a Developer, I want to create the project structure so that I can
 - [x] The database is connected to the project.
 - [x] The project is deployed on Heroku.
 
-User Story: As a user, I want to understand what the website is at a glance
+User Story: As a user, I want to understand what the website is at a glance.
 
 - [x] The User opens up the website and sees the landing page.
 - [x] The User can see a leading message on the screen.
-- [x] The User can see register and log In buttons
+- [x] The User can see register and log In buttons.
 
 User Story: As a user, I want to have easy navigation so that I can move through the pages on the site.
 
@@ -42,29 +42,29 @@ User Story: As a user, I want to see if the website has social media so that I c
 
 User Story:  As a user, I want to be able to pick and view articles that interest me so I can plan a trip.
 
-- [X] Data is added to the database
-- [X] Create cards on the home page to display the data
+- [X] Data is added to the database.
+- [X] Create cards on the home page to display the data.
 - [X] Users can see the articles being displayed.
 
 User Story: As a user, I want to be able to see images of the places I want to view so that I can get a picture of what they are like.
 
-- [X] Images are add to the database
+- [X] Images are add to the database.
 - [X] Add images to the cards.
 - [X] Users can see the images being displayed.
 
 User Story: As site owner, I want to be able to see proper styling through the website, so that it is consistent.
 
-- [X] Will deploy the website with fully functioning CSS
+- [X] Will deploy the website with fully functioning CSS.
 
 User Story: As a user, I want a more readable layout so I am not overwhelmed with information.
 
-- [X] The page will have pagination
+- [X] The page will have pagination.
 
 User Story: As a user, I want to be able to contact the help centre when I have an issue so that I can get it resolved.
 
-- [X] User can click the button in the footer
-- [X] User can see a modal open
-- [X] User can see contact information
+- [X] User can click the button in the footer.
+- [X] User can see a modal open.
+- [X] User can see contact information.
 
 User Story: As a user, I want to see the Details page clearly so that it is easy to find information.
 
@@ -73,7 +73,7 @@ User Story: As a user, I want to see the Details page clearly so that it is easy
 - [X] User can see images.
 - [X] User can see content that has been added.
 
-User Story: As a user, I want to add reviews so that people can see them
+User Story: As a user, I want to add reviews so that people can see them.
 
 - [X] User can click a button on the details page.
 - [X] Users can see a new page to add reviews.
@@ -85,21 +85,21 @@ User Story: As a user, I want to see the About pages so that I can learn more ab
 
 - [X] User can see the about page.
 - [X] User can get to the About page from the navigation page.
-- [X] User can view data on the about page
+- [X] User can view data on the about page.
 
 User Story: As a user, I want to be able to create an account so I can have access to account-specific views.
 
-- [X] As a user, I can create an account
+- [X] As a user, I can create an account.
 - [X] As a user, I can see a different view depending on what my user permissions are.
 
 User Story: As a user, I want to be able to login and logout of the website so I can add reviews.
 
 - [X] As a user, I can log in to the website and view the different pages.
-- [X] As a user, I can log out the website
+- [X] As a user, I can log out the website.
 
-User Story: As a user, I want to be able to create an account so I can have access to account-specific views
+User Story: As a user, I want to be able to create an account so I can have access to account-specific views.
 
-- [X] As a user, I can create an account
+- [X] As a user, I can create an account.
 - [X] As a user, I can see a different view depending on what my user permissions are.
 
 User Story: As a user, I want to have control over my reviews so that I can update and delete them.
@@ -131,7 +131,7 @@ HTML validation all passed.
 
 **Register Page**
 
-The errors from the register page are coming from the allauth template . As I have no control of this, I decided to leave this error.
+The errors from the register page are coming from the allauth template. As I have no control of this, I decided to leave this error.
 
 ![Register Page HTML Validation Image](docs/test-images/registerpage-html-validation.png)
 
@@ -148,7 +148,7 @@ JapaScript test all passed.
 
 The JSHint validator has no error.
 However, there are warnings.  
-A warning saying Function declared within loops referencing an outer scoped variable may lead to confusing semantics. I decided to ignore the warning as this was just a warning and it didn’t have any impact on the code or the project.  
+A warning saying "Function declared within loops referencing an outer scoped variable may lead to confusing semantics". I decided to ignore the warning as this was just a warning and it didn’t have any impact on the code or the project.  
 
 I used the comment out feature along with “jshint esversion: 6” to [Remove the SE6 Warning](https://teamtreehouse.com/community/why-does-jshint-give-me-these-warnings-about-es6) as these are ok to leave. 
 
@@ -156,12 +156,12 @@ I used the comment out feature along with “jshint esversion: 6” to [Remove t
 
 ### CI Python Linter
 
-python test all passed.
+Python test all passed.
 
 All Python files containing the project's codes have been tested.   
 All the errors were fixed and after running the CI Python Linter it shows there are no errors.  
 
-I didn’t include a screenshot of each one. but all other Python files were passed the test with same results.
+I didn’t include a screenshot of each one. All other Python files passed the test with same results.
 
 ![Python Test Image](docs/test-images/python-test.png)
 
@@ -195,91 +195,91 @@ I didn’t include a screenshot of each one. but all other Python files were pas
 
 ### Navigation bar
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Navigation Bar GIF Image](docs/test-gif/navigationbar.gif)
 
 ### Login and Register Buttons on the Hero Image
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Login and Register Buttons on the Hero Image](docs/test-gif/hero-login-register-btn.gif)
 
 ### Pagination
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Pagination Image](docs/test-gif/pagination.gif)
 
 ### Explore Button
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Explore Button Image](docs/test-gif/explore-btn.gif)
 
 ### Write Review Button
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Write Review Button Image](docs/test-gif/write-review-btn.gif)
 
 ### Write Review
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Write review Image](docs/test-gif/write-review.gif)
 
 ### Edit Review
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Edit Review Image](docs/test-gif/edit.gif)
 
 ### Delete Review
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Delete Review Image](docs/test-gif/delete.gif)
 
 ### Quit Review Button
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Quit Review button](docs/test-gif/quit-btn.gif)
 
 ### About Page
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![About Page Image](docs/test-gif/about-page.gif)
 
 ### Login Logout 
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Login Logout Image](docs/test-gif/login-logout.gif)
 
 ### Register 
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Register Image](docs/test-gif/register.gif)
 
 ### Back to Top
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Back to Top Button Image](docs/test-gif/back-to-top.gif)
 
 ### Help Center
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Help Center Image](docs/test-gif/help-center.gif)
 
 ### Social Media Icons
 
-**Pass:**  Works as expected 
+**Pass:**  Works as expected. 
 
 ![Social Media Icons Image](docs/test-gif/social-media-icons.gif)
 

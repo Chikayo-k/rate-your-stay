@@ -28,6 +28,28 @@ As this is a holiday review website, I decided not to use too many colours but c
 ### favicon
 ![Icon Image](docs/images/icon.png)
 
+### Wireframes
+
+**Desktop**
+
+[Desktop Image 1](docs/wireframes/wireframe-pc1.jpg)  
+[Desktop Image 2](docs/wireframes/wireframe-pc2.jpg)  
+[Desktop Image 3](docs/wireframes/wireframe-pc3.jpg)  
+[Desktop Image 4](docs/wireframes/wireframe-pc4.jpg)  
+[Desktop Image 5](docs/wireframes/wireframe-pc5.jpg)  
+
+**Tablet**
+
+[Tablet Image 1](docs/wireframes/wireframe-tablet1.jpg)  
+[Tablet Image 2](docs/wireframes/wireframe-tablet2.jpg)  
+[Tablet Image 3](docs/wireframes/wireframe-tablet3.jpg)
+
+**Phone**
+
+[Phone Image 1](docs/wireframes/wireframe-phone1.jpg)  
+[Phone Image 2](docs/wireframes/wireframe-phone2.jpg)  
+[Phone Image 3](docs/wireframes/wireframe-phone3.jpg)
+
 ## Project Goals
 
 ### Project Goal

@@ -463,6 +463,12 @@ The project was deployed using HEROKU.
 16. Use the Manual deploy option and click the Deploy Branch button.
 17. When the App is successfully deployed, the View button will show up. The button is the deployed link.
 
+## Secret key issue and the changes I made
+
+Due to an issue when the secret key was visible in the settings.py file. It made my code insecure and people could see github it in the Github repository.
+The django secret key needed to be stored inside the env.py file as this poses a significant security risk on the application.
+I update my code and stored my secret key in the env.py file. This has resolved my issue.
+
 ## Reference
 
 Code
